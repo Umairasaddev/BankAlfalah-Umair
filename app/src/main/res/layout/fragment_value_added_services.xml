@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.OpenAccountStocks.ValueAddedServicesFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/plain_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@drawable/arrow_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Value Added Services"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17sdp" />
+
+    <RelativeLayout
+        android:id="@+id/RLFastAndSecureTrading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/_50sdp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Fast and Secure Trading Platforms"
+            android:textColor="@color/original_red"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/next"
+            android:layout_marginTop="@dimen/_4sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/tv1"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/grey_line"
+            android:layout_marginHorizontal="@dimen/_5sdp"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/RLAccessToAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RLFastAndSecureTrading"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="24 / 7 Access to Account"
+            android:textColor="@color/original_red"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/next"
+            android:layout_marginTop="@dimen/_4sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/tv2"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/grey_line"
+            android:layout_marginHorizontal="@dimen/_5sdp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLInstantFundsTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RLAccessToAccount"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="24 / 7 Instant Funds Transfer"
+            android:textColor="@color/original_red"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/next"
+            android:layout_marginTop="@dimen/_4sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/tv3"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/grey_line"
+            android:layout_marginHorizontal="@dimen/_5sdp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLAwardWinningResearchTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RLInstantFundsTransfer"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Award Winning Research Team"
+            android:textColor="@color/original_red"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/next"
+            android:layout_marginTop="@dimen/_4sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/tv4"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/grey_line"
+            android:layout_marginHorizontal="@dimen/_5sdp"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RLAwardWinningResearchTeam"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="State of the Art Research Portal"
+            android:textColor="@color/original_red"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/next"
+            android:layout_marginTop="@dimen/_4sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/tv5"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/grey_line"
+            android:layout_marginHorizontal="@dimen/_5sdp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl5"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Lowest Commission Structure"
+            android:textColor="@color/original_red"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/next"
+            android:layout_marginTop="@dimen/_4sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/tv6"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/grey_line"
+            android:layout_marginHorizontal="@dimen/_5sdp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RlEfficientCallCenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl6"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Efficient Call Center &amp; Customer Support"
+            android:textColor="@color/original_red"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/next"
+            android:layout_marginTop="@dimen/_4sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/tv7"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/grey_line"
+            android:layout_marginHorizontal="@dimen/_5sdp"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RlEfficientCallCenter"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Multi Channel Order Placement"
+            android:textColor="@color/original_red"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/next"
+            android:layout_marginTop="@dimen/_4sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/tv8"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/grey_line"
+            android:layout_marginHorizontal="@dimen/_5sdp"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/RLIVRServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl8"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="24 / 7 IVR Services"
+            android:textColor="@color/original_red"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/next"
+            android:layout_marginTop="@dimen/_4sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/tv9"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/grey_line"
+            android:layout_marginHorizontal="@dimen/_5sdp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

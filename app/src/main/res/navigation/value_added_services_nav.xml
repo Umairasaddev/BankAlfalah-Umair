@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/value_added_services_nav"
+    app:startDestination="@id/valueAddedServicesFragment">
+
+    <fragment
+        android:id="@+id/valueAddedServicesFragment"
+        android:name="com.example.bankalfalahumair.Fragments.OpenAccountStocks.ValueAddedServicesFragment"
+        android:label="fragment_value_added_services"
+        tools:layout="@layout/fragment_value_added_services" >
+        <action
+            android:id="@+id/action_valueAddedServicesFragment_to_fastAndSecureTradingFragment"
+            app:destination="@id/fastAndSecureTradingFragment"
+            app:popUpTo="@id/valueAddedServicesFragment" />
+        <action
+            android:id="@+id/action_valueAddedServicesFragment_to_fullAccesstoAccountFragment"
+            app:destination="@id/fullAccesstoAccountFragment"
+            app:popUpTo="@id/valueAddedServicesFragment" />
+        <action
+            android:id="@+id/action_valueAddedServicesFragment_to_instantFundTransferFragment"
+            app:destination="@id/instantFundTransferFragment"
+            app:popUpTo="@id/valueAddedServicesFragment" />
+        <action
+            android:id="@+id/action_valueAddedServicesFragment_to_awardWinningResearchTeamFragment"
+            app:destination="@id/awardWinningResearchTeamFragment"
+            app:popUpTo="@id/valueAddedServicesFragment" />
+        <action
+            android:id="@+id/action_valueAddedServicesFragment_to_efficientCallCenterFragment"
+            app:destination="@id/efficientCallCenterFragment"
+            app:popUpTo="@id/valueAddedServicesFragment" />
+        <action
+            android:id="@+id/action_valueAddedServicesFragment_to_ivrServicesFragment"
+            app:destination="@id/ivrServicesFragment"
+            app:popUpTo="@id/valueAddedServicesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fastAndSecureTradingFragment"
+        android:name="com.example.bankalfalahumair.Fragments.ValueAddedServices.FastAndSecureTradingFragment"
+        android:label="fragment_fast_and_secure_trading"
+        tools:layout="@layout/fragment_fast_and_secure_trading" />
+    <fragment
+        android:id="@+id/fullAccesstoAccountFragment"
+        android:name="com.example.bankalfalahumair.Fragments.ValueAddedServices.FullAccesstoAccountFragment"
+        android:label="fragment_full_accessto_account"
+        tools:layout="@layout/fragment_full_accessto_account" />
+    <fragment
+        android:id="@+id/instantFundTransferFragment"
+        android:name="com.example.bankalfalahumair.Fragments.ValueAddedServices.InstantFundTransferFragment"
+        android:label="fragment_instant_fund_transfer"
+        tools:layout="@layout/fragment_instant_fund_transfer" />
+    <fragment
+        android:id="@+id/awardWinningResearchTeamFragment"
+        android:name="com.example.bankalfalahumair.Fragments.ValueAddedServices.AwardWinningResearchTeamFragment"
+        android:label="fragment_award_winning_research_team"
+        tools:layout="@layout/fragment_award_winning_research_team" />
+    <fragment
+        android:id="@+id/efficientCallCenterFragment"
+        android:name="com.example.bankalfalahumair.Fragments.ValueAddedServices.EfficientCallCenterFragment"
+        android:label="fragment_efficient_call_center"
+        tools:layout="@layout/fragment_efficient_call_center" />
+    <fragment
+        android:id="@+id/ivrServicesFragment"
+        android:name="com.example.bankalfalahumair.Fragments.ValueAddedServices.IvrServicesFragment"
+        android:label="fragment_ivr_services"
+        tools:layout="@layout/fragment_ivr_services" />
+</navigation>

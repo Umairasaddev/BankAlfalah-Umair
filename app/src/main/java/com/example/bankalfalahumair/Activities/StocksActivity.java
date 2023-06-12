@@ -8,12 +8,13 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.example.bankalfalahumair.BlankActivities.OpenAccountBlankActivity;
+import com.example.bankalfalahumair.BlankActivities.ValueAddedServicesActivity;
 import com.example.bankalfalahumair.R;
 
 public class StocksActivity extends AppCompatActivity {
 
 
-    LinearLayout LLStartTrading,LLPracticeTrading,LLOpenAccountStocks;
+    LinearLayout LLStartTrading,LLPracticeTrading,LLOpenAccountStocks,LLValueAddedServices;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,7 @@ public class StocksActivity extends AppCompatActivity {
         LLStartTrading = findViewById(R.id.LLStartTrading);
         LLPracticeTrading = findViewById(R.id.LLPracticeTrading);
         LLOpenAccountStocks = findViewById(R.id.LLOpenAccountStocks);
+        LLValueAddedServices = findViewById(R.id.LLValueAddedServices);
 
         onClickListners();
     }
@@ -48,6 +50,14 @@ public class StocksActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), OpenAccountBlankActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        LLValueAddedServices.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ValueAddedServicesActivity.class);
                 startActivity(intent);
             }
         });
