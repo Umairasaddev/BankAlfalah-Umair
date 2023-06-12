@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/about_alfalah_nav"
+    app:startDestination="@id/aboutAlfalahParentFragment">
+
+    <fragment
+        android:id="@+id/aboutAlfalahParentFragment"
+        android:name="com.example.bankalfalahumair.Fragments.AboutAlfalahParentFragment"
+        android:label="fragment_about_alfalah_parent"
+        tools:layout="@layout/fragment_about_alfalah_parent" >
+        <action
+            android:id="@+id/action_aboutAlfalahParentFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:popUpTo="@id/aboutAlfalahParentFragment" />
+        <action
+            android:id="@+id/action_aboutAlfalahParentFragment_to_servicesFragment"
+            app:destination="@id/servicesFragment"
+            app:popUpTo="@id/aboutAlfalahParentFragment" />
+        <action
+            android:id="@+id/action_aboutAlfalahParentFragment_to_ourSponsersFragment"
+            app:destination="@id/ourSponsersFragment"
+            app:popUpTo="@id/aboutAlfalahParentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.bankalfalahumair.Fragments.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="com.example.bankalfalahumair.Fragments.ServicesFragment"
+        android:label="fragment_services"
+        tools:layout="@layout/fragment_services" />
+    <fragment
+        android:id="@+id/ourSponsersFragment"
+        android:name="com.example.bankalfalahumair.Fragments.OurSponsersFragment"
+        android:label="fragment_our_sponsers"
+        tools:layout="@layout/fragment_our_sponsers" />
+</navigation>

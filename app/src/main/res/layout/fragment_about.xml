@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    tools:context=".Fragments.AboutFragment">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/alfalah_clsa_securities"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="@string/e_Falah_Trade"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="@string/research_portal"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp" />
+
+</RelativeLayout>

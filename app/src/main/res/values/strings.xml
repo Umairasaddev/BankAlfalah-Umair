@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Bank Alfalah Umair</string>
+    <string name="activate">Activate your practice account using the activation link sent at your email address</string>
+    <string name="login_to_your_trading_account">Login to your trading account</string>
+    <string name="forget_credentials">Forget Credentials?</string>
+    <string name="don_t_have_trading_account">Don\'t have trading account?</string>
+    <string name="sign_up"><u> Sign Up</u></string>
+    <string name="log_in_using_biometric_credential">Log in using biometric credential</string>
+    <string name="biometric_login">Biometric Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contact_us">Contact us</string>
+    <string name="home">Home</string>
+    <string name="alfalah_clsa_securities"><b><font color='#bb2f29'> Alfalah CLSA Securities </font> </b> is one of the leading pure agency brokers in Pakistan. We occupy a sweet spot being backed by one of the largest banks in Pakistan,<b> <font color='#e52d25'> Bank Alfalah Limited </font> </b> and, by Asia’s leading Capital Markets &amp; Investment Group,<b><font color='#1b3a60'>  CLSA Limited.</font></b> Taking advantage of BAFL &amp; CLSA, we provide a full spectrum of services which include Equity Brokerage, Research, Investment Banking, Forex and Money Market.</string>
+
+    <string name="e_Falah_Trade"><b> <font color='#bb2f29'>e-Falah Trade</font> </b> is the online trading platform of Alfalah CLSA Securities, customized for retail and high net-worth investors. Our modern and hassle-free trading system provides Real-time access to the<b> <font color='#176f5a'> Pakistan Stock Exchange </font> </b>through the internet and allows investors to make direct trades through desktop, web and mobile applications without the intervention of a trader.</string>
+
+    <string name="research_portal">Our Research portal provides timely in-depth analysis of companies, industries and economy, Alfalah CLSA has earned its reputation as a leader in the field of research in Pakistan. Please visit our website <b><font color="#1b3a60">  https://alfalahclsa.com/ </font></b>for more details.</string>
+
+
+    <string name="equity_sales">AFCLSA’s Equity Sales desk is vastly experienced in servicing the entire spectrum of investors including Domestic Institutional Investors including Banks, NBFCs, Employees Benefit Funds, Mutual Funds, Foreign Institutional Investors (“FIIs”), Domestic High Net-Worth Individuals (“HNWIs) and Non-Resident Pakistanis (“NRPs).</string>
+
+
+    <string name="AFCLSA">AFCLSA, being a pure agency broker with <b><font color='#bb2f29'> NO proprietary trading book, </font> </b>ensures utmost emphasis on compliance, provides more transparent and efficient order execution to our clients, order security and the highest ethical standards and also offers FIX Connectivity.</string>
+
+
+    <string name="online_trading_platform"> <font color='#474545'>Online trading platform of Alfalah CLSA that delivers timely access to the Pakistan Stock Exchange (PSX) without any geographical constraint. Time is of essence. The quicker the better is what we believe in when it comes to executing trading decisions. </font></string>
+
+
+    <string name="text_with_bullet">  &#8226;  </string>
+
+    <string name="customer_support">Customer support and Call Center for Placing orders &amp; Queries</string>
+    <string name="exit">Exit</string>
+    <string name="where_value">Where value of shares in custody is Rs.100,000\n\n 100,000 x 0.03% = Rs.30 (annually)\n <font color="#FFC107"> Or</font> \n 100,000 x 0.03% / 12 = Rs.2.50 (per month)</string>
+    <string name="nccpl_uin_maintenance_fee">NCCPL UIN maintenance fee \n <font color="#bb2f29">   Rs.150 per applicant per annum</font></string>
+    <string name="cdc_sub_account_maintenance_fee">CDC Sub account maintenance fee \n<font color="#bb2f29">    Rs.400 per account per annum</font></string>
+    <string name="log_out">Log Out</string>
+    <string name="for_filer_of_income_tax_returns">For filer of income tax returns <font color="#bb2f29"><b> 12.50%</b></font></string>
+    <string name="for_non_filer_of_income_tax_returns">For non-filer of income tax returns<font color="#bb2f29"><b> 17.50%</b></font></string>
+    <string name="rate_of_tax_deduction_5"><b> Rate of Tax Deduction:<font color="#bb2f29"> 5%</font></b></string>
+    <string name="face_value_x_of_dividend_announced"><font color="#bb2f29"><b>=</b></font> Face Value <font color="#bb2f29"><b>x</b></font> % of dividend announced\<n></n><font color="#bb2f29">=</font> Rs. 10/- <font color="#bb2f29">x</font> 17.5%\n<font color="#bb2f29">=</font> Rs. 1.75</string>
+    <string name="dividend_amount_x_no_of_shares"><font color="#bb2f29">=</font> Dividend amount <font color="#bb2f29">x</font> No. of shares\n<font color="#bb2f29">=</font> Rs. 1.75  <font color="#bb2f29">x</font> 5000\n<font color="#bb2f29">=</font> Rs. 8,750.00</string>
+    <string name="dividend_amount_"><font color="#bb2f29">=</font> Dividend amount <font color="#bb2f29">–</font> 12.50% Tax\n<font color="#bb2f29">=</font> Rs. 7,656.25</string>
+    <string name="for_reactivation_of_blocked_id">For reactivation of blocked ID, kindly email us at <font color="#1b3a60"><b>csd@alfalahclsa.com</b></font> along with your account number from your registered email address or call our helpline 021-111-237-111.</string>
+    <string name="where_value_of_shares">Where value of shares in custody is Rs.100,000\n100,000 x 0.03% = Rs.30 (annually) \n<font color="#FFC107">Or</font>\n100,000 x 0.03% / 12 = Rs.2.50 (per month)</string>
+    <string name="sindh_sales_tax_sst_">Sindh Sales Tax (“SST”) or Federal Excise Duty (“FED”) is charged by Government of Pakistan on Trading of shares as well as on all Custodial services including CDC Sub account and NCCPL UIN maintenance fee\n<font color="#bb2f29"> <b>@ 13%</b></font></string>
+    <string name="for_filter_of_income_tax">For filter of income tax returns </string>
+    <string name="afs_provides_continuous_access"><![CDATA[AFS provides continuous access to\n Trading Account\n\nDay or Night, account information is available 24 hours a day, 7 days a week\n\nKeep track of your Shares & Funds\n No matter where you are\n Anywhere\n Anytime]]></string>
+    <string name="award_winning_research_">Award-Winning Research\n For Profitable Decision Making\n\n\n Check website!\n Add some words about the team and mention\n previous winners</string>
+    <string name="bills_bonds"><![CDATA[Bills & Bonds]]></string>
+    <string name="start_trading">Start \nTrading</string>
+    <string name="open_account">Open \nAccount</string>
+    <string name="practice_trading">Practice \nTrading</string>
+    <string name="comissions_amp_taxes"><![CDATA[Comissions \n & Taxes]]></string>
+    <string name="value_added_services">Value Added \nServices</string>
+    <string name="comission_calculator">Comission \nCalculator</string>
+    <string name="faqs">FAQs</string>
+    <string name="investor_education">Investor \nEducation</string>
+    <string name="rates">Rates</string>
+    <string name="link_to_video_tutorial">Link to\nVideo\nTutorial</string>
+    <string name="resident_pakistani">Resident\n(Pakistani)</string>
+    <string name="non_resident_living_abroad">Non-Resident\n(living abroad)</string>
+
+</resources>

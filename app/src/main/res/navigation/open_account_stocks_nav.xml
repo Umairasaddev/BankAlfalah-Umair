@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/open_account_stocks_nav"
+    app:startDestination="@id/openAccountStocksFragment">
+
+    <fragment
+        android:id="@+id/openAccountStocksFragment"
+        android:name="com.example.bankalfalahumair.Fragments.OpenAccountStocks.OpenAccountStocksFragment"
+        android:label="fragment_open_account_stocks"
+        tools:layout="@layout/fragment_open_account_stocks" >
+        <action
+            android:id="@+id/action_openAccountStocksFragment_to_applyNowOAFragment"
+            app:destination="@id/applyNowOAFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/applyNowOAFragment"
+        android:name="com.example.bankalfalahumair.Fragments.OpenAccountStocks.ApplyNowOAFragment"
+        android:label="fragment_apply_now_o_a"
+        tools:layout="@layout/fragment_apply_now_o_a" >
+        <action
+            android:id="@+id/action_applyNowOAFragment_to_residenceFragment"
+            app:destination="@id/residenceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/residenceFragment"
+        android:name="com.example.bankalfalahumair.Fragments.OpenAccountStocks.ResidenceFragment"
+        android:label="fragment_residence"
+        tools:layout="@layout/fragment_residence" />
+</navigation>
