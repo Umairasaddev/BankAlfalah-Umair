@@ -60,5 +60,6 @@
     <string name="link_to_video_tutorial">Link to\nVideo\nTutorial</string>
     <string name="resident_pakistani">Resident\n(Pakistani)</string>
     <string name="non_resident_living_abroad">Non-Resident\n(living abroad)</string>
+    <string name="registrar_companies">Registrar/Companies follow the “Active Tax Payer List” which is available at Federal Board of Revenue (“FBR”) website <font color="#1a3770">https://www.fbr.giv.pk/</font></string>
 
 </resources>

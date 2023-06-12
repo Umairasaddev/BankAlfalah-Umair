@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.CommissionsAndTaxes.MaintenanceFeeFragment">
+
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:text="Maintenance Fee"
+
+        android:textColor="@color/red"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview1"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="The National Clearing Company of Pakistan Limited (”NCCPL”) and Central Depositary Company (“CDC”) charges account maintenance fee on annual basis to all account holders maintaining UIN and CDC Sub account."
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_14sdp" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tv1"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:dividerColor="#FFC107"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+
+        <TextView
+            android:id="@+id/b1"
+            style="@style/BulletTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:text="\u25BA;" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/b1"
+            android:text="@string/nccpl_uin_maintenance_fee"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_15sdp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl1"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp">
+
+
+        <TextView
+            android:id="@+id/b2"
+            style="@style/BulletTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:text="\u25BA;" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/b2"
+            android:text="@string/cdc_sub_account_maintenance_fee"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_15sdp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

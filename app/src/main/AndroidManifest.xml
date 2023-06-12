@@ -15,6 +15,13 @@
         <activity
             android:name=".BlankActivities.ValueAddedServicesActivity"
             android:exported="false" />
+
+              <activity
+            android:name=".BlankActivities.CommissionAndTaxBlankActivity"
+            android:exported="false" />
+
+
+
         <activity
             android:name=".BlankActivities.OpenAccountBlankActivity"
             android:exported="false" />

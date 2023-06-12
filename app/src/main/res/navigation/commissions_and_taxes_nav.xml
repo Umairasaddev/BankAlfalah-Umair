@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/commissions_and_taxes_nav"
+    app:startDestination="@id/commissionAndTaxesFragment">
+
+    <fragment
+        android:id="@+id/commissionAndTaxesFragment"
+        android:name="com.example.bankalfalahumair.Fragments.CommissionsAndTaxes.CommissionAndTaxesFragment"
+        android:label="fragment_commission_and_taxes"
+        tools:layout="@layout/fragment_commission_and_taxes" >
+        <action
+            android:id="@+id/action_commissionAndTaxesFragment_to_custodyFeeFragment"
+            app:destination="@id/custodyFeeFragment"
+            app:popUpTo="@id/commissionAndTaxesFragment" />
+        <action
+            android:id="@+id/action_commissionAndTaxesFragment_to_maintenanceFeeFragment"
+            app:destination="@id/maintenanceFeeFragment"
+            app:popUpTo="@id/commissionAndTaxesFragment" />
+        <action
+            android:id="@+id/action_commissionAndTaxesFragment_to_capitalGainsFragment"
+            app:destination="@id/capitalGainsFragment"
+            app:popUpTo="@id/commissionAndTaxesFragment" />
+        <action
+            android:id="@+id/action_commissionAndTaxesFragment_to_sstFedFragment"
+            app:destination="@id/sstFedFragment"
+            app:popUpTo="@id/commissionAndTaxesFragment" />
+        <action
+            android:id="@+id/action_commissionAndTaxesFragment_to_taxOnDividendFragment"
+            app:destination="@id/taxOnDividendFragment"
+            app:popUpTo="@id/commissionAndTaxesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/custodyFeeFragment"
+        android:name="com.example.bankalfalahumair.Fragments.CommissionsAndTaxes.CustodyFeeFragment"
+        android:label="fragment_custody_fee"
+        tools:layout="@layout/fragment_custody_fee" />
+    <fragment
+        android:id="@+id/maintenanceFeeFragment"
+        android:name="com.example.bankalfalahumair.Fragments.CommissionsAndTaxes.MaintenanceFeeFragment"
+        android:label="fragment_maintenance_fee"
+        tools:layout="@layout/fragment_maintenance_fee" />
+    <fragment
+        android:id="@+id/capitalGainsFragment"
+        android:name="com.example.bankalfalahumair.Fragments.CommissionsAndTaxes.CapitalGainsFragment"
+        android:label="fragment_capital_gains"
+        tools:layout="@layout/fragment_capital_gains" />
+    <fragment
+        android:id="@+id/sstFedFragment"
+        android:name="com.example.bankalfalahumair.Fragments.CommissionsAndTaxes.SstFedFragment"
+        android:label="fragment_sst_fed"
+        tools:layout="@layout/fragment_sst_fed" />
+    <fragment
+        android:id="@+id/taxOnDividendFragment"
+        android:name="com.example.bankalfalahumair.Fragments.CommissionsAndTaxes.TaxOnDividendFragment"
+        android:label="fragment_tax_on_dividend"
+        tools:layout="@layout/fragment_tax_on_dividend" />
+</navigation>
