@@ -3,17 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.FAQs.TradingAccountFaqsFragment">
+    tools:context=".Fragments.FAQs.TradingApplication.TradingApplicationFragment">
 
 
-<!--    change ids-->
     <include
         android:id="@+id/toolbar"
         layout="@layout/plain_app_bar"
         android:layout_width="match_parent"
-        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_height="wrap_content" />
+        android:layout_alignParentEnd="true" />
 
     <ImageView
         android:layout_width="@dimen/_20sdp"
@@ -27,13 +26,13 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/_10sdp"
-        android:text="Account Account FAQs"
+        android:text="Trading Application"
         android:textColor="@color/white"
         android:textSize="@dimen/_17sdp" />
 
 
     <RelativeLayout
-        android:id="@+id/RLAccountMaintenance"
+        android:id="@+id/RLCustodyCharges"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
@@ -49,9 +48,9 @@
 
             android:layout_marginStart="@dimen/_10sdp"
             android:elevation="@dimen/_10sdp"
-            android:text="Account Maintenance"
+            android:text="How to change PIN &amp; Password "
             android:textColor="@color/white"
-            android:layout_centerHorizontal="true"
+
             android:textSize="@dimen/_16sdp" />
 
 
@@ -59,10 +58,10 @@
 
 
     <RelativeLayout
-        android:id="@+id/RLDepositWithdrawls"
+        android:id="@+id/RLAccountMaintenanceFee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/RLAccountMaintenance"
+        android:layout_below="@id/RLCustodyCharges"
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:background="@drawable/border_white_tv"
@@ -75,19 +74,20 @@
 
             android:layout_marginStart="@dimen/_10sdp"
             android:elevation="@dimen/_10sdp"
-            android:text="Deposit - Withdrawls"
+            android:text="What is Account Maintenance Fee"
             android:textColor="@color/white"
-            android:layout_centerHorizontal="true"
+
             android:textSize="@dimen/_16sdp" />
+
 
     </RelativeLayout>
 
 
     <RelativeLayout
-        android:id="@+id/RLCommissionsAndTaxesFaqs"
+        android:id="@+id/RLCorporateAction"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/RLDepositWithdrawls"
+        android:layout_below="@id/RLAccountMaintenanceFee"
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:background="@drawable/border_white_tv"
@@ -100,18 +100,19 @@
 
             android:layout_marginStart="@dimen/_10sdp"
             android:elevation="@dimen/_10sdp"
-            android:text="Commissions &amp; Taxes"
+            android:text="What is Corporate Action"
             android:textColor="@color/white"
-            android:layout_centerHorizontal="true"
+
             android:textSize="@dimen/_16sdp" />
+
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/RLCustodyMatters"
+        android:id="@+id/RLDividendCashDividend"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/RLCommissionsAndTaxesFaqs"
+        android:layout_below="@id/RLCorporateAction"
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:background="@drawable/border_white_tv"
@@ -124,19 +125,20 @@
 
             android:layout_marginStart="@dimen/_10sdp"
             android:elevation="@dimen/_10sdp"
-            android:text="Custody Matters"
+            android:text="Dividend / Cash Dividend"
             android:textColor="@color/white"
-            android:layout_centerHorizontal="true"
+
             android:textSize="@dimen/_16sdp" />
+
 
     </RelativeLayout>
 
 
     <RelativeLayout
-        android:id="@+id/RLTradingApplication"
+        android:id="@+id/RLBonusSharesStockDividend"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/RLCustodyMatters"
+        android:layout_below="@id/RLDividendCashDividend"
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:background="@drawable/border_white_tv"
@@ -149,19 +151,19 @@
 
             android:layout_marginStart="@dimen/_10sdp"
             android:elevation="@dimen/_10sdp"
-            android:text="Trading Application"
+            android:text="Bonus Shares / Stock Dividend"
             android:textColor="@color/white"
-            android:layout_centerHorizontal="true"
+
             android:textSize="@dimen/_16sdp" />
+
 
     </RelativeLayout>
 
-
     <RelativeLayout
-        android:id="@+id/RLTechnicalIssues"
+        android:id="@+id/RLRightShares"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/RLTradingApplication"
+        android:layout_below="@id/RLBonusSharesStockDividend"
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:background="@drawable/border_white_tv"
@@ -174,13 +176,13 @@
 
             android:layout_marginStart="@dimen/_10sdp"
             android:elevation="@dimen/_10sdp"
-            android:text="Technical Issues"
+            android:text="Bonus Shares / Stock Dividend"
             android:textColor="@color/white"
-            android:layout_centerHorizontal="true"
+
             android:textSize="@dimen/_16sdp" />
 
+
     </RelativeLayout>
-
-
 
 </RelativeLayout>
+

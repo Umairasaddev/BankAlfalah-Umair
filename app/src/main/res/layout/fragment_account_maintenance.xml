@@ -85,7 +85,7 @@
 
 
     <RelativeLayout
-        android:id="@+id/RLTraderFacility"
+        android:id="@+id/RLWhatisTraderFacility"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/RLHowtoCloseAccount"

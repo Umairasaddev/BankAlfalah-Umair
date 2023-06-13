@@ -3,16 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.FAQs.DepositWithdrawls.DepositAndWithdrawlsFragment">
+    tools:context=".Fragments.FAQs.CommissionAndTaxes.CommissionAndTaxesFaqsFragment">
 
 
     <include
         android:id="@+id/toolbar"
         layout="@layout/plain_app_bar"
         android:layout_width="match_parent"
-        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_height="wrap_content" />
+        android:layout_alignParentEnd="true" />
 
     <ImageView
         android:layout_width="@dimen/_20sdp"
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/_10sdp"
-        android:text="Deposit &amp; Withdrawls"
+        android:text="Commission &amp; Taxes"
         android:textColor="@color/white"
         android:textSize="@dimen/_17sdp" />
 
@@ -48,7 +48,7 @@
 
             android:layout_marginStart="@dimen/_10sdp"
             android:elevation="@dimen/_10sdp"
-            android:text="How to withdraw fund"
+            android:text="Commission Slab"
             android:textColor="@color/white"
 
             android:textSize="@dimen/_16sdp" />
@@ -57,9 +57,8 @@
     </RelativeLayout>
 
 
-
     <RelativeLayout
-        android:id="@+id/RLHowtoCloseAccount"
+        android:id="@+id/RLTaxOnTrading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/RLHowtoUpdateAccount"
@@ -75,7 +74,7 @@
 
             android:layout_marginStart="@dimen/_10sdp"
             android:elevation="@dimen/_10sdp"
-            android:text="How to deposit fund"
+            android:text="Tax on Trading"
             android:textColor="@color/white"
 
             android:textSize="@dimen/_16sdp" />
@@ -85,10 +84,10 @@
 
 
     <RelativeLayout
-        android:id="@+id/RLCorporateAction"
+        android:id="@+id/RLCapitalGainsTax"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/RLHowtoCloseAccount"
+        android:layout_below="@id/RLTaxOnTrading"
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:background="@drawable/border_white_tv"
@@ -101,7 +100,32 @@
 
             android:layout_marginStart="@dimen/_10sdp"
             android:elevation="@dimen/_10sdp"
-            android:text="Online Fund Transfer Facility"
+            android:text="Capital Gains Tax"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/_16sdp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLTaxonDividendAndBonusShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RLCapitalGainsTax"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/border_white_tv"
+        android:elevation="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_12sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/_10sdp"
+            android:elevation="@dimen/_10sdp"
+            android:text="Tax on Dividend And Bonus Share"
             android:textColor="@color/white"
 
             android:textSize="@dimen/_16sdp" />
@@ -110,4 +134,7 @@
     </RelativeLayout>
 
 </RelativeLayout>
+
+
+
 

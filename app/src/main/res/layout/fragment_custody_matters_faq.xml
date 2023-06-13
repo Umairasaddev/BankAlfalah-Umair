@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.FAQs.DepositWithdrawls.DepositAndWithdrawlsFragment">
+    tools:context=".Fragments.FAQs.CustodyMatters.CustodyMattersFaqFragment">
 
 
     <include
@@ -26,13 +26,13 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/_10sdp"
-        android:text="Deposit &amp; Withdrawls"
+        android:text="Custody Matters"
         android:textColor="@color/white"
         android:textSize="@dimen/_17sdp" />
 
 
     <RelativeLayout
-        android:id="@+id/RLHowtoUpdateAccount"
+        android:id="@+id/RLCustodyCharges"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
@@ -48,7 +48,7 @@
 
             android:layout_marginStart="@dimen/_10sdp"
             android:elevation="@dimen/_10sdp"
-            android:text="How to withdraw fund"
+            android:text="What are Custody Charges"
             android:textColor="@color/white"
 
             android:textSize="@dimen/_16sdp" />
@@ -59,10 +59,10 @@
 
 
     <RelativeLayout
-        android:id="@+id/RLHowtoCloseAccount"
+        android:id="@+id/RLAccountMaintenanceFee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/RLHowtoUpdateAccount"
+        android:layout_below="@id/RLCustodyCharges"
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:background="@drawable/border_white_tv"
@@ -75,7 +75,7 @@
 
             android:layout_marginStart="@dimen/_10sdp"
             android:elevation="@dimen/_10sdp"
-            android:text="How to deposit fund"
+            android:text="What is Account Maintenance Fee"
             android:textColor="@color/white"
 
             android:textSize="@dimen/_16sdp" />
@@ -88,7 +88,7 @@
         android:id="@+id/RLCorporateAction"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/RLHowtoCloseAccount"
+        android:layout_below="@id/RLAccountMaintenanceFee"
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:background="@drawable/border_white_tv"
@@ -101,7 +101,82 @@
 
             android:layout_marginStart="@dimen/_10sdp"
             android:elevation="@dimen/_10sdp"
-            android:text="Online Fund Transfer Facility"
+            android:text="What is Corporate Action"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/_16sdp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/RLDividendCashDividend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RLCorporateAction"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/border_white_tv"
+        android:elevation="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_12sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/_10sdp"
+            android:elevation="@dimen/_10sdp"
+            android:text="Dividend / Cash Dividend"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/_16sdp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/RLBonusSharesStockDividend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RLDividendCashDividend"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/border_white_tv"
+        android:elevation="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_12sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/_10sdp"
+            android:elevation="@dimen/_10sdp"
+            android:text="Bonus Shares / Stock Dividend"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/_16sdp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLRightShares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RLBonusSharesStockDividend"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/border_white_tv"
+        android:elevation="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_12sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/_10sdp"
+            android:elevation="@dimen/_10sdp"
+            android:text="Bonus Shares / Stock Dividend"
             android:textColor="@color/white"
 
             android:textSize="@dimen/_16sdp" />

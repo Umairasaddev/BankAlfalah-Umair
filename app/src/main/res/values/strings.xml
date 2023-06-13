@@ -61,5 +61,9 @@
     <string name="resident_pakistani">Resident\n(Pakistani)</string>
     <string name="non_resident_living_abroad">Non-Resident\n(living abroad)</string>
     <string name="registrar_companies">Registrar/Companies follow the “Active Tax Payer List” which is available at Federal Board of Revenue (“FBR”) website <font color="#1a3770">https://www.fbr.giv.pk/</font></string>
+    <string name="account_closing_request"><font color="#d0271b">Account closing request can only be processed without debit balance in account.</font></string>
+    <string name="Download_the_written">Download the written request draft available below for your convenience. Fill in the account number and email us scanned copy of the duly signed request at <font color="#1b3a60"><b>csd@alfalahclsa.com</b></font>from your registered email address. On receipt of your email, the request will be forwarded to NCCPL for processing.\n\nWe will inform you once the request is processed and clearance received from NCCPL.</string>
+    <string name="Premium_account">Premium account package is available below for your review. \n\n To avail the trader facility, kindly email us the form duly signed by Account holder and Joint account holder(s) at <font color="#1b3a60"><b>csd@alfalahclsa.com</b></font> from your registered email address.</string>
+    <string name="download_the_wrritten">Download the written request draft available below for your convenience. Fill in the details you would like to update and email us scanned copy of the duly signed request letter along with the scan copy of supporting document (if any) at  <font color="#1b3a60"><b>csd@alfalahclsa.com</b></font>from your registered email address. On receipt of your email, the request will be forwarded to NCCPL for processing. \n\nWe will inform you once the request is processed by NCCPL.</string>
 
 </resources>

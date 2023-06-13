@@ -3,16 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.FAQs.DepositWithdrawls.DepositAndWithdrawlsFragment">
+    tools:context=".Fragments.FAQs.AccountMaintenance.WhatisTraderFacilityFragment">
 
 
     <include
         android:id="@+id/toolbar"
         layout="@layout/plain_app_bar"
         android:layout_width="match_parent"
-        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_height="wrap_content" />
+        android:layout_alignParentEnd="true" />
 
     <ImageView
         android:layout_width="@dimen/_20sdp"
@@ -26,17 +26,17 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/_10sdp"
-        android:text="Deposit &amp; Withdrawls"
+        android:text="Account Maintenance"
         android:textColor="@color/white"
         android:textSize="@dimen/_17sdp" />
 
 
     <RelativeLayout
-        android:id="@+id/RLHowtoUpdateAccount"
+        android:id="@+id/RLTraderFacility"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
-        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:background="@drawable/border_white_tv"
         android:elevation="@dimen/_10sdp"
@@ -48,7 +48,7 @@
 
             android:layout_marginStart="@dimen/_10sdp"
             android:elevation="@dimen/_10sdp"
-            android:text="How to withdraw fund"
+            android:text="Trader Facility"
             android:textColor="@color/white"
 
             android:textSize="@dimen/_16sdp" />
@@ -57,57 +57,31 @@
     </RelativeLayout>
 
 
-
-    <RelativeLayout
-        android:id="@+id/RLHowtoCloseAccount"
+    <TextView
+        android:id="@+id/textv1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/RLHowtoUpdateAccount"
+        android:layout_below="@id/RLTraderFacility"
         android:layout_marginHorizontal="@dimen/_15sdp"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:background="@drawable/border_white_tv"
-        android:elevation="@dimen/_10sdp"
-        android:paddingVertical="@dimen/_12sdp">
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="fill_horizontal"
+        android:lineSpacingMultiplier="1.1"
+        android:text="The Trader facility is available for our Premium account holders. They enjoy the benefit of having an experienced equity trader assigned to them, who provides customers with guidance for investments and also help by placing their orders on their instructions."
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:layout_marginStart="@dimen/_10sdp"
-            android:elevation="@dimen/_10sdp"
-            android:text="How to deposit fund"
-            android:textColor="@color/white"
-
-            android:textSize="@dimen/_16sdp" />
-
-
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:id="@+id/RLCorporateAction"
+    <TextView
+        android:id="@+id/textv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/RLHowtoCloseAccount"
+        android:layout_below="@id/textv1"
         android:layout_marginHorizontal="@dimen/_15sdp"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:background="@drawable/border_white_tv"
-        android:elevation="@dimen/_10sdp"
-        android:paddingVertical="@dimen/_12sdp">
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="start|center_horizontal"
+        android:lineSpacingMultiplier="1.1"
+        android:text="@string/Premium_account"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:layout_marginStart="@dimen/_10sdp"
-            android:elevation="@dimen/_10sdp"
-            android:text="Online Fund Transfer Facility"
-            android:textColor="@color/white"
-
-            android:textSize="@dimen/_16sdp" />
-
-
-    </RelativeLayout>
 
 </RelativeLayout>
-

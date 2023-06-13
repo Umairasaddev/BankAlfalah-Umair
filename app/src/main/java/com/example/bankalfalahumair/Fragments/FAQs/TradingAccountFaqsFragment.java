@@ -33,11 +33,15 @@ public class TradingAccountFaqsFragment extends Fragment {
         NavController navController = Navigation.findNavController(view);
 
 
-        RelativeLayout RLAccountMaintenance,RLDepositWithdrawls;
+        RelativeLayout RLAccountMaintenance,RLDepositWithdrawls,RLCommissionsAndTaxesFaqs
+                ,RLCustodyMatters,RLTradingApplication;
 
 
         RLAccountMaintenance = view.findViewById(R.id.RLAccountMaintenance);
         RLDepositWithdrawls = view.findViewById(R.id.RLDepositWithdrawls);
+        RLCommissionsAndTaxesFaqs = view.findViewById(R.id.RLCommissionsAndTaxesFaqs);
+        RLCustodyMatters = view.findViewById(R.id.RLCustodyMatters);
+        RLTradingApplication = view.findViewById(R.id.RLTradingApplication);
 
         RLAccountMaintenance.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +53,27 @@ public class TradingAccountFaqsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 navController.navigate(R.id.action_tradingAccountFaqsFragment_to_depositAndWithdrawlsFragment);
+            }
+        });
+
+        RLCommissionsAndTaxesFaqs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_tradingAccountFaqsFragment_to_commissionAndTaxesFaqsFragment);
+            }
+        });
+
+        RLCustodyMatters.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_tradingAccountFaqsFragment_to_custodyMattersFaqFragment);
+            }
+        });
+
+        RLTradingApplication.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_tradingAccountFaqsFragment_to_tradingApplicationFragment);
             }
         });
 

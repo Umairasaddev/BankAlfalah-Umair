@@ -1,4 +1,4 @@
-package com.example.bankalfalahumair.Fragments.FAQs.CommissionAndTaxes;
+package com.example.bankalfalahumair.Fragments.FAQs.AccountMaintenance;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.example.bankalfalahumair.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link CommissionAndTaxesFragment#newInstance} factory method to
+ * Use the {@link HowtoCloseAccountFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CommissionAndTaxesFragment extends Fragment {
+public class HowtoCloseAccountFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class CommissionAndTaxesFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public CommissionAndTaxesFragment() {
+    public HowtoCloseAccountFragment() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class CommissionAndTaxesFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment CommissionAndTaxesFragment.
+     * @return A new instance of fragment HowtoCloseAccountFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static CommissionAndTaxesFragment newInstance(String param1, String param2) {
-        CommissionAndTaxesFragment fragment = new CommissionAndTaxesFragment();
+    public static HowtoCloseAccountFragment newInstance(String param1, String param2) {
+        HowtoCloseAccountFragment fragment = new HowtoCloseAccountFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class CommissionAndTaxesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_commission_and_taxes2, container, false);
+        return inflater.inflate(R.layout.fragment_howto_close_account, container, false);
     }
 }
