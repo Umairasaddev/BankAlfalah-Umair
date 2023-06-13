@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/faqs_nav"
+    app:startDestination="@id/tradingAccountFaqsFragment">
+
+    <fragment
+        android:id="@+id/tradingAccountFaqsFragment"
+        android:name="com.example.bankalfalahumair.Fragments.FAQs.TradingAccountFaqsFragment"
+        android:label="fragment_trading_account_faqs"
+        tools:layout="@layout/fragment_trading_account_faqs" >
+        <action
+            android:id="@+id/action_tradingAccountFaqsFragment_to_accountMaintenanceFragment"
+            app:destination="@id/accountMaintenanceFragment"
+            app:popUpTo="@id/tradingAccountFaqsFragment" />
+        <action
+            android:id="@+id/action_tradingAccountFaqsFragment_to_depositAndWithdrawlsFragment"
+            app:destination="@id/depositAndWithdrawlsFragment"
+            app:popUpTo="@id/tradingAccountFaqsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountMaintenanceFragment"
+        android:name="com.example.bankalfalahumair.Fragments.FAQs.AccountMaintenance.AccountMaintenanceFragment"
+        android:label="fragment_account_maintenance"
+        tools:layout="@layout/fragment_account_maintenance" />
+    <fragment
+        android:id="@+id/depositAndWithdrawlsFragment"
+        android:name="com.example.bankalfalahumair.Fragments.FAQs.DepositWithdrawls.DepositAndWithdrawlsFragment"
+        android:label="fragment_deposit_and_withdrawls"
+        tools:layout="@layout/fragment_deposit_and_withdrawls" />
+</navigation>

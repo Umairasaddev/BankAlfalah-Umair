@@ -78,7 +78,7 @@
                     <ImageView
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
-                        android:src="@drawable/stocks"
+                        android:src="@drawable/start_trading"
 
 
                         />
@@ -115,7 +115,7 @@
                     <ImageView
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
-                        android:src="@drawable/commodities" />
+                        android:src="@drawable/open_account" />
 
                 </LinearLayout>
 
@@ -157,7 +157,7 @@
                     <ImageView
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
-                        android:src="@drawable/bills_and_bounds"
+                        android:src="@drawable/value_added_services"
 
 
                         />
@@ -240,7 +240,7 @@
                     <ImageView
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
-                        android:src="@drawable/open_account"
+                        android:src="@drawable/faqs"
 
 
                         />
