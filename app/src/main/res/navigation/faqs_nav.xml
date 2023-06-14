@@ -53,17 +53,52 @@
         android:id="@+id/depositAndWithdrawlsFragment"
         android:name="com.example.bankalfalahumair.Fragments.FAQs.DepositWithdrawls.DepositAndWithdrawlsFragment"
         android:label="fragment_deposit_and_withdrawls"
-        tools:layout="@layout/fragment_deposit_and_withdrawls" />
+        tools:layout="@layout/fragment_deposit_and_withdrawls" >
+        <action
+            android:id="@+id/action_depositAndWithdrawlsFragment_to_fundWithdrawlFragment"
+            app:destination="@id/fundWithdrawlFragment"
+            app:popUpTo="@id/depositAndWithdrawlsFragment" />
+        <action
+            android:id="@+id/action_depositAndWithdrawlsFragment_to_howtoDepositFundFragment"
+            app:destination="@id/howtoDepositFundFragment"
+            app:popUpTo="@id/depositAndWithdrawlsFragment" />
+        <action
+            android:id="@+id/action_depositAndWithdrawlsFragment_to_onlineFundTransferFragment"
+            app:destination="@id/onlineFundTransferFragment"
+            app:popUpTo="@id/depositAndWithdrawlsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/commissionAndTaxesFaqsFragment"
         android:name="com.example.bankalfalahumair.Fragments.FAQs.CommissionAndTaxes.CommissionAndTaxesFaqsFragment"
         android:label="fragment_commission_and_taxes_faqs"
-        tools:layout="@layout/fragment_commission_and_taxes_faqs" />
+        tools:layout="@layout/fragment_commission_and_taxes_faqs" >
+        <action
+            android:id="@+id/action_commissionAndTaxesFaqsFragment_to_taxonTradingFragment"
+            app:destination="@id/taxonTradingFragment"
+            app:popUpTo="@id/commissionAndTaxesFaqsFragment" />
+        <action
+            android:id="@+id/action_commissionAndTaxesFaqsFragment_to_capitalGainsFragment2"
+            app:destination="@id/capitalGainsFragment2"
+            app:popUpTo="@id/commissionAndTaxesFaqsFragment" />
+        <action
+            android:id="@+id/action_commissionAndTaxesFaqsFragment_to_taxOnDividendFragment2"
+            app:destination="@id/taxOnDividendFragment2"
+            app:popUpTo="@id/commissionAndTaxesFaqsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/custodyMattersFaqFragment"
         android:name="com.example.bankalfalahumair.Fragments.FAQs.CustodyMatters.CustodyMattersFaqFragment"
         android:label="fragment_custody_matters_faq"
-        tools:layout="@layout/fragment_custody_matters_faq" />
+        tools:layout="@layout/fragment_custody_matters_faq" >
+        <action
+            android:id="@+id/action_custodyMattersFaqFragment_to_custodyFeeFragment2"
+            app:destination="@id/custodyFeeFragment2"
+            app:popUpTo="@id/custodyMattersFaqFragment" />
+        <action
+            android:id="@+id/action_custodyMattersFaqFragment_to_maintenanceFeeFragment2"
+            app:destination="@id/maintenanceFeeFragment2"
+            app:popUpTo="@id/custodyMattersFaqFragment" />
+    </fragment>
     <fragment
         android:id="@+id/tradingApplicationFragment"
         android:name="com.example.bankalfalahumair.Fragments.FAQs.TradingApplication.TradingApplicationFragment"
@@ -84,4 +119,44 @@
         android:name="com.example.bankalfalahumair.Fragments.FAQs.AccountMaintenance.WhatisTraderFacilityFragment"
         android:label="fragment_whatis_trader_facility"
         tools:layout="@layout/fragment_whatis_trader_facility" />
+    <fragment
+        android:id="@+id/fundWithdrawlFragment"
+        android:name="com.example.bankalfalahumair.Fragments.FAQs.DepositWithdrawls.FundWithdrawlFragment"
+        android:label="fragment_fund_withdrawl"
+        tools:layout="@layout/fragment_fund_withdrawl" />
+    <fragment
+        android:id="@+id/howtoDepositFundFragment"
+        android:name="com.example.bankalfalahumair.Fragments.FAQs.DepositWithdrawls.HowtoDepositFundFragment"
+        android:label="fragment_howto_deposit_fund"
+        tools:layout="@layout/fragment_howto_deposit_fund" />
+    <fragment
+        android:id="@+id/onlineFundTransferFragment"
+        android:name="com.example.bankalfalahumair.Fragments.FAQs.DepositWithdrawls.OnlineFundTransferFragment"
+        android:label="fragment_online_fund_transfer"
+        tools:layout="@layout/fragment_online_fund_transfer" />
+    <fragment
+        android:id="@+id/taxonTradingFragment"
+        android:name="com.example.bankalfalahumair.Fragments.FAQs.CustodyMatters.TaxonTradingFragment"
+        android:label="fragment_taxon_trading"
+        tools:layout="@layout/fragment_taxon_trading" />
+    <fragment
+        android:id="@+id/capitalGainsFragment2"
+        android:name="com.example.bankalfalahumair.Fragments.CommissionsAndTaxes.CapitalGainsFragment"
+        android:label="fragment_capital_gains"
+        tools:layout="@layout/fragment_capital_gains" />
+    <fragment
+        android:id="@+id/taxOnDividendFragment2"
+        android:name="com.example.bankalfalahumair.Fragments.CommissionsAndTaxes.TaxOnDividendFragment"
+        android:label="fragment_tax_on_dividend"
+        tools:layout="@layout/fragment_tax_on_dividend" />
+    <fragment
+        android:id="@+id/custodyFeeFragment2"
+        android:name="com.example.bankalfalahumair.Fragments.CommissionsAndTaxes.CustodyFeeFragment"
+        android:label="fragment_custody_fee"
+        tools:layout="@layout/fragment_custody_fee" />
+    <fragment
+        android:id="@+id/maintenanceFeeFragment2"
+        android:name="com.example.bankalfalahumair.Fragments.CommissionsAndTaxes.MaintenanceFeeFragment"
+        android:label="fragment_maintenance_fee"
+        tools:layout="@layout/fragment_maintenance_fee" />
 </navigation>

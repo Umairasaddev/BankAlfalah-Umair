@@ -27,7 +27,7 @@
             android:layout_width="@dimen/_150sdp"
             android:layout_height="@dimen/_150sdp"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/_20sdp"
+
             android:src="@drawable/pointer"
             />
         <RelativeLayout
@@ -170,7 +170,7 @@
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:background="@drawable/finger_print" />
 
         <TextView
@@ -185,7 +185,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
 
             android:orientation="horizontal"
 

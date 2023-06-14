@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.FAQs.AccountMaintenance.HowtoUpdateAccountFragment">
-
+    tools:context=".Fragments.FAQs.CustodyMatters.TaxonTradingFragment">
 
     <include
         android:id="@+id/toolbar"
@@ -30,9 +30,8 @@
         android:textColor="@color/white"
         android:textSize="@dimen/_17sdp" />
 
-
     <RelativeLayout
-        android:id="@+id/RLHowtoUpdateAccountInformation"
+        android:id="@+id/RLFundWithdrawl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
@@ -48,7 +47,7 @@
 
             android:layout_marginStart="@dimen/_10sdp"
             android:elevation="@dimen/_10sdp"
-            android:text="How to update account information"
+            android:text="What taxes apply on trading"
             android:textColor="@color/white"
 
             android:textSize="@dimen/_16sdp" />
@@ -58,30 +57,41 @@
 
 
     <TextView
-        android:id="@+id/textv1"
+        android:id="@+id/tv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/RLHowtoUpdateAccountInformation"
-        android:layout_marginHorizontal="@dimen/_15sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:gravity="fill_horizontal"
-        android:lineSpacingMultiplier="1.1"
-        android:text="Changes to the basic details of account can be made through a written request duly signed by the main applicant and joint account holder(s) if any."
-        android:textColor="@color/black"
+        android:layout_below="@id/RLFundWithdrawl"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:letterSpacing="0.03"
+        android:lineSpacingMultiplier="1.3"
+        android:text="@string/sindh_sales_tax"
+        android:textColor="@color/blue"
         android:textSize="@dimen/_15sdp" />
 
-    <TextView
-        android:id="@+id/textv2"
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
         android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tv2"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:dividerColor="#FFC107" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textv1"
-        android:layout_marginHorizontal="@dimen/_15sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:gravity="start|center_horizontal"
-        android:lineSpacingMultiplier="1.1"
-        android:text="@string/download_the_wrritten"
-        android:textColor="@color/black"
+        android:layout_below="@id/divider"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:letterSpacing="0.04"
+        android:lineSpacingMultiplier="1.2"
+        android:text="On Trading > SST/FED is charged on commission amount"
+        android:textColor="@color/red"
         android:textSize="@dimen/_15sdp" />
 
 
 </RelativeLayout>
+

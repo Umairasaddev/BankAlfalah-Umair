@@ -6,26 +6,67 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.CommissionsAndTaxes.MaintenanceFeeFragment">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/plain_app_bar"
+        android:layout_width="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@drawable/arrow_back" />
 
     <TextView
-        android:id="@+id/textview1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_40sdp"
-        android:text="Maintenance Fee"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Custody Matters"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17sdp" />
 
-        android:textColor="@color/red"
-        android:textSize="@dimen/_20sdp"
-        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/RLAccountMaintenanceFeeFaq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/border_white_tv"
+        android:elevation="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_12sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/_10sdp"
+            android:elevation="@dimen/_10sdp"
+            android:text="Account Maintenance Fee"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/_16sdp" />
+
+
+    </RelativeLayout>
+
+
+
 
     <TextView
         android:id="@+id/tv1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textview1"
+        android:layout_below="@id/RLAccountMaintenanceFeeFaq"
         android:layout_marginHorizontal="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:lineSpacingMultiplier="1.1"
         android:text="The National Clearing Company of Pakistan Limited (”NCCPL”) and Central Depositary Company (“CDC”) charges account maintenance fee on annual basis to all account holders maintaining UIN and CDC Sub account."
         android:textColor="@color/blue"
         android:textSize="@dimen/_14sdp" />

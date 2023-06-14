@@ -1,14 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.FAQs.DepositWithdrawls.FundWithdrawlFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/plain_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@drawable/arrow_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Account Maintenance"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17sdp" />
+
+
+    <RelativeLayout
+        android:id="@+id/RLFundWithdrawl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/border_white_tv"
+        android:elevation="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_12sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/_10sdp"
+            android:elevation="@dimen/_10sdp"
+            android:text="Fund Withdrawl"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/_16sdp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RLFundWithdrawl"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:lineSpacingMultiplier="1.1"
+        android:text="Facility to withdraw fund from your trading account is available on all trading platforms i.e. Trading terminal, Web-based terminal &amp; Mobile application. Select the option “Cash withdrawal” from the trading menu and select the options as per your convenience."
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+        android:id="@+id/textv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textv1"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="start|center_horizontal"
+        android:lineSpacingMultiplier="1.1"
+        android:text="Cash can be withdrawn through Cheque delivery as well as through Online transfer in your bank account. The amount is available on the basis of availability of fund on settlement date and minimum maintenance balance policy of Rs.5,000/- cash in your account."
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+
+</RelativeLayout>

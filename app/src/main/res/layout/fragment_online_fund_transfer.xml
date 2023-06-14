@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.FAQs.AccountMaintenance.HowtoUpdateAccountFragment">
+    tools:context=".Fragments.FAQs.DepositWithdrawls.OnlineFundTransferFragment">
 
 
     <include
@@ -32,7 +32,7 @@
 
 
     <RelativeLayout
-        android:id="@+id/RLHowtoUpdateAccountInformation"
+        android:id="@+id/RLFundWithdrawl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
@@ -48,7 +48,7 @@
 
             android:layout_marginStart="@dimen/_10sdp"
             android:elevation="@dimen/_10sdp"
-            android:text="How to update account information"
+            android:text="Online Fund Transfer"
             android:textColor="@color/white"
 
             android:textSize="@dimen/_16sdp" />
@@ -61,12 +61,11 @@
         android:id="@+id/textv1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/RLHowtoUpdateAccountInformation"
+        android:layout_below="@id/RLFundWithdrawl"
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_10sdp"
-        android:gravity="fill_horizontal"
         android:lineSpacingMultiplier="1.1"
-        android:text="Changes to the basic details of account can be made through a written request duly signed by the main applicant and joint account holder(s) if any."
+android:text="Customers can transfer funds from your bank account to Alfalah CLSA Securities bank account using Inter Bank Funds Transfer (“IBFT”) facility offered by your bank."
         android:textColor="@color/black"
         android:textSize="@dimen/_15sdp" />
 
@@ -79,7 +78,7 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:gravity="start|center_horizontal"
         android:lineSpacingMultiplier="1.1"
-        android:text="@string/download_the_wrritten"
+android:text="@string/after_making"
         android:textColor="@color/black"
         android:textSize="@dimen/_15sdp" />
 
