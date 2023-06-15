@@ -27,35 +27,41 @@
         android:layout_below="@id/logo"
         android:layout_centerHorizontal="true"
         android:text="Digital Account Application"
-        android:textColor="@color/black"
+        android:textColor="@color/original_red"
         android:textSize="@dimen/_22sdp" />
 
-
+    <TextView
+        android:id="@+id/linkvideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/link_to_video_tutorial"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_below="@+id/DigitalAccountTV"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/_10sdp"
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/RLBottom"
-        android:layout_marginBottom="@dimen/_30sdp"
+android:layout_marginTop="@dimen/_100sdp"
         android:background="@color/white"
+        android:layout_below="@+id/linkvideo"
+        android:weightSum="2"
         android:orientation="vertical">
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/link_to_video_tutorial"
-            android:textSize="@dimen/_16sdp"
-            android:textColor="@color/blue"
-            android:textStyle="bold"
-            android:layout_gravity="end"
-            android:layout_marginEnd="@dimen/_10sdp"
-            />
+
         <LinearLayout
             android:id="@+id/LinearLayout1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginTop="@dimen/_10sdp"
             android:orientation="horizontal"
+            android:layout_weight="1"
             android:weightSum="2">
 
 
@@ -74,11 +80,11 @@
                     android:layout_marginStart="@dimen/_25sdp"
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_15sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/stocks"
 
 
@@ -92,8 +98,8 @@
                     android:layout_marginStart="@dimen/_25sdp"
                     android:gravity="center"
                     android:text="Apply Now"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textColor="@color/original_red"
+                    android:textSize="@dimen/_14sdp" />
             </LinearLayout>
 
 
@@ -111,11 +117,11 @@
                     android:layout_marginEnd="@dimen/_25sdp"
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_15sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/commodities" />
 
                 </LinearLayout>
@@ -126,8 +132,8 @@
                     android:layout_marginEnd="@dimen/_25sdp"
                     android:gravity="center"
                     android:text="How to Apply"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textColor="@color/original_red"
+                    android:textSize="@dimen/_14sdp"  />
             </LinearLayout>
 
 
@@ -135,11 +141,11 @@
 
         <LinearLayout
             android:id="@+id/LinearLayout2"
-
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_height="0dp"
+
             android:orientation="horizontal"
+            android:layout_weight="1"
             android:weightSum="3">
 
 
@@ -153,14 +159,14 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_15sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/stocks"
 
 
@@ -171,11 +177,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
                     android:gravity="center"
                     android:text="Verify OTP"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textColor="@color/original_red"
+                    android:textSize="@dimen/_14sdp"  />
             </LinearLayout>
 
 
@@ -192,11 +198,11 @@
 
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_15sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/commodities" />
 
                 </LinearLayout>
@@ -206,8 +212,8 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="Resume"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textColor="@color/original_red"
+                    android:textSize="@dimen/_14sdp"  />
             </LinearLayout>
 
             <LinearLayout
@@ -220,14 +226,14 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_15sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/commodities" />
 
                 </LinearLayout>
@@ -235,11 +241,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
                     android:gravity="center"
                     android:text="Check Status"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textColor="@color/original_red"
+                    android:textSize="@dimen/_14sdp"  />
             </LinearLayout>
 
 
@@ -271,8 +277,8 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
                 android:background="@drawable/power_off"
 
                 />
@@ -301,8 +307,8 @@
             <ImageView
 
                 android:id="@+id/imageView2"
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
                 android:background="@drawable/message" />
 
             <TextView

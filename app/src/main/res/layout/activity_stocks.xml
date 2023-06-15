@@ -14,49 +14,56 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="@dimen/_100sdp"
-        android:layout_height="@dimen/_100sdp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:src="@drawable/logo" />
 
     <ImageView
         android:id="@+id/home"
-        android:layout_width="@dimen/_30sdp"
-        android:layout_height="@dimen/_30sdp"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:src="@drawable/home"
         android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_10sdp"/>
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/backBtnStocks"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/arrow_back"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_5sdp"/>
 
     <TextView
         android:id="@+id/stocksTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar"
-        android:layout_alignParentStart="true"
-        android:layout_toStartOf="@id/logo"
-        android:text="Stocks"
-        android:textColor="@color/mate_red"
-        android:textSize="@dimen/_25sdp"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_10sdp"
-        android:textStyle="bold" />
+        android:text="Stocks"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/logo"
+        android:layout_above="@id/RLBottom"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/_20sdp"
         android:background="@color/white"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="3"
+
+        >
 
         <LinearLayout
             android:id="@+id/LinearLayout1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="3">
 
@@ -78,8 +85,8 @@
                     android:padding="@dimen/_13sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/start_trading"
 
 
@@ -93,7 +100,7 @@
                     android:layout_marginStart="@dimen/_10sdp"
                     android:gravity="center"
                     android:text="@string/start_trading"
-                    android:textColor="@color/black"
+                    android:textColor="@color/original_red"
                     android:textSize="@dimen/_14sdp" />
             </LinearLayout>
 
@@ -115,8 +122,8 @@
                     android:padding="@dimen/_13sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/open_account" />
 
                 </LinearLayout>
@@ -126,7 +133,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/open_account"
-                    android:textColor="@color/black"
+                    android:textColor="@color/original_red"
                     android:textSize="@dimen/_14sdp" />
             </LinearLayout>
 
@@ -147,8 +154,8 @@
                     android:padding="@dimen/_13sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/practice_trading" />
 
                 </LinearLayout>
@@ -159,7 +166,7 @@
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:gravity="center"
                     android:text="@string/practice_trading"
-                    android:textColor="@color/black"
+                    android:textColor="@color/original_red"
                     android:textSize="@dimen/_14sdp" />
             </LinearLayout>
 
@@ -168,8 +175,9 @@
         <LinearLayout
             android:id="@+id/LinearLayout2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_height="0dp"
+
+            android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="3">
 
@@ -191,8 +199,8 @@
                     android:padding="@dimen/_13sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/value_added_services"
 
 
@@ -206,7 +214,7 @@
                     android:layout_marginStart="@dimen/_10sdp"
                     android:gravity="center"
                     android:text="@string/value_added_services"
-                    android:textColor="@color/black"
+                    android:textColor="@color/original_red"
                     android:textSize="@dimen/_14sdp" />
             </LinearLayout>
 
@@ -228,8 +236,8 @@
                     android:padding="@dimen/_13sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/commission___taxes" />
 
                 </LinearLayout>
@@ -239,7 +247,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/comissions_amp_taxes"
-                    android:textColor="@color/black"
+                    android:textColor="@color/original_red"
                     android:textSize="@dimen/_14sdp" />
             </LinearLayout>
 
@@ -259,8 +267,8 @@
                     android:padding="@dimen/_13sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/commission_calculator" />
 
                 </LinearLayout>
@@ -271,7 +279,7 @@
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:gravity="center"
                     android:text="@string/comission_calculator"
-                    android:textColor="@color/black"
+                    android:textColor="@color/original_red"
                     android:textSize="@dimen/_14sdp" />
             </LinearLayout>
 
@@ -282,8 +290,9 @@
         <LinearLayout
             android:id="@+id/LinearLayout3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_height="0dp"
+
+            android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="3">
 
@@ -304,8 +313,8 @@
                     android:padding="@dimen/_13sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/faqs"
 
 
@@ -319,7 +328,7 @@
                     android:layout_marginStart="@dimen/_10sdp"
                     android:gravity="center"
                     android:text="@string/faqs"
-                    android:textColor="@color/black"
+                    android:textColor="@color/original_red"
                     android:textSize="@dimen/_14sdp" />
             </LinearLayout>
 
@@ -340,8 +349,8 @@
                     android:padding="@dimen/_13sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/investor_education" />
 
                 </LinearLayout>
@@ -351,7 +360,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/investor_education"
-                    android:textColor="@color/black"
+                    android:textColor="@color/original_red"
                     android:textSize="@dimen/_14sdp" />
             </LinearLayout>
 
@@ -382,8 +391,8 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
                 android:background="@drawable/power_off"
 
                 />
@@ -412,8 +421,8 @@
             <ImageView
 
                 android:id="@+id/imageView2"
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
                 android:background="@drawable/message" />
 
             <TextView

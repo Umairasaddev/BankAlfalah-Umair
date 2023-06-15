@@ -14,24 +14,25 @@
         android:orientation="vertical"
         android:layout_above="@id/RLBottom"
         android:paddingHorizontal="@dimen/_25sdp"
-        android:paddingTop="@dimen/_20sdp">
+        >
 
 
         <ImageView
             android:layout_width="@dimen/_150sdp"
             android:layout_height="@dimen/_150sdp"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/_10sdp"
+
             android:src="@drawable/pointer" />
 
         <RelativeLayout
             android:id="@+id/RelativeParentLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:background="@drawable/border_grey_box"
             android:elevation="5dp"
             android:paddingTop="@dimen/_20sdp"
-            android:paddingBottom="@dimen/_20sdp">
+            android:paddingBottom="@dimen/_15sdp">
 
             <TextView
                 android:id="@+id/secondlevelTV"
@@ -80,7 +81,7 @@
             <RelativeLayout
                 android:id="@+id/ButtonProceed"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_50sdp"
+                android:layout_height="@dimen/_45sdp"
                 android:layout_below="@id/rlSecondLevelPassword"
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_15sdp"
@@ -89,8 +90,8 @@
 
                 <ImageView
                     android:id="@+id/IValfalah"
-                    android:layout_width="@dimen/_30sdp"
-                    android:layout_height="@dimen/_30sdp"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:src="@drawable/alfalah_logo" />
@@ -106,8 +107,8 @@
                     android:textSize="@dimen/_16sdp" />
 
                 <ImageView
-                    android:layout_width="@dimen/_30sdp"
-                    android:layout_height="@dimen/_30sdp"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/_10sdp"
@@ -137,9 +138,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:text="OR"
 
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="OR"
                     android:textSize="@dimen/_14sdp" />
 
                 <TextView
@@ -150,7 +151,7 @@
                     android:layout_marginTop="@dimen/_10sdp"
 
                     android:layout_marginEnd="@dimen/_15sdp"
-                    android:layout_marginBottom="@dimen/_10sdp"
+
                     android:background="@drawable/grey_line" />
 
             </RelativeLayout>
@@ -160,7 +161,7 @@
                 android:layout_height="@dimen/_40sdp"
                 android:layout_below="@id/TVor"
                 android:layout_marginHorizontal="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_5sdp"
+
                 android:background="@drawable/grey_box">
 
                 <TextView
@@ -214,8 +215,8 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
                 android:background="@drawable/home"
 
                 />
@@ -244,8 +245,8 @@
             <ImageView
 
                 android:id="@+id/imageView2"
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
                 android:background="@drawable/message" />
 
             <TextView

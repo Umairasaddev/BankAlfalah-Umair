@@ -25,17 +25,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@id/RLBottom"
         android:layout_below="@id/logo"
         android:background="@color/white"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="3">
 
         <LinearLayout
             android:id="@+id/LinearLayout1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_weight="1"
             android:orientation="horizontal"
-
             android:weightSum="2">
 
 
@@ -53,11 +55,11 @@
                     android:layout_marginStart="@dimen/_10sdp"
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_15sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/stocks"
 
 
@@ -71,7 +73,7 @@
                     android:layout_marginStart="@dimen/_10sdp"
                     android:text="Stocks"
 
-                    android:textColor="@color/mate_red"
+                    android:textColor="@color/original_red"
                     android:textSize="@dimen/_15sdp" />
             </LinearLayout>
 
@@ -90,11 +92,11 @@
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_15sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/commodities" />
 
                 </LinearLayout>
@@ -104,17 +106,17 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:text="Commodities"
-                    android:textColor="@color/mate_red"
-                    android:textSize="@dimen/_15sdp"  />
+                    android:textColor="@color/original_red"
+                    android:textSize="@dimen/_15sdp" />
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/LinearLayout2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_height="0dp"
             android:orientation="horizontal"
+            android:layout_weight="1"
             android:weightSum="2">
 
 
@@ -132,11 +134,11 @@
                     android:layout_marginStart="@dimen/_10sdp"
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_15sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/bills_and_bounds"
 
 
@@ -149,8 +151,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:text="@string/bills_bonds"
-                    android:textColor="@color/mate_red"
-                    android:textSize="@dimen/_15sdp"  />
+                    android:textColor="@color/original_red"
+                    android:textSize="@dimen/_15sdp" />
             </LinearLayout>
 
 
@@ -168,11 +170,11 @@
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_15sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/research"
 
 
@@ -185,8 +187,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:text="Research"
-                    android:textColor="@color/mate_red"
-                    android:textSize="@dimen/_15sdp"  />
+                    android:textColor="@color/original_red"
+                    android:textSize="@dimen/_15sdp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -194,9 +196,10 @@
         <LinearLayout
             android:id="@+id/LinearLayout3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_height="0dp"
+
             android:orientation="horizontal"
+            android:layout_weight="1"
             android:weightSum="2">
 
 
@@ -214,11 +217,11 @@
                     android:layout_marginStart="@dimen/_10sdp"
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_15sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/open_account"
 
 
@@ -231,7 +234,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:text="Open Account"
-                    android:textColor="@color/mate_red"
+                    android:textColor="@color/original_red"
                     android:textSize="@dimen/_15sdp" />
             </LinearLayout>
 
@@ -250,11 +253,11 @@
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_15sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
                         android:src="@drawable/about_us" />
 
                 </LinearLayout>
@@ -264,7 +267,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:text="About Us"
-                    android:textColor="@color/mate_red"
+                    android:textColor="@color/original_red"
                     android:textSize="@dimen/_15sdp" />
             </LinearLayout>
         </LinearLayout>
@@ -296,8 +299,8 @@
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
                     android:src="@drawable/index" />
 
                 <TextView
@@ -320,8 +323,8 @@
 
                 <ImageView
                     android:id="@+id/imageMarket"
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
                     android:src="@drawable/market" />
 
                 <TextView
@@ -348,9 +351,9 @@
                 <ImageView
 
                     android:id="@+id/imagePortfolio"
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:src="@drawable/index" />
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/portfolio" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -378,8 +381,8 @@
                 <ImageView
 
                     android:id="@+id/imageOrder"
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
                     android:src="@drawable/order" />
 
                 <TextView
@@ -405,8 +408,8 @@
                 <ImageView
 
                     android:id="@+id/imageSymbol"
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
                     android:src="@drawable/symbol" />
 
                 <TextView

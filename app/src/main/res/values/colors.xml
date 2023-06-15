@@ -24,4 +24,6 @@
     <color name="status_bar_color">#FF0000</color>
     <color name="greyish">#424242</color>
 
+    <color name="hint_color">#A39E9E</color>
+
 </resources>

@@ -20,7 +20,7 @@ public class StocksActivity extends AppCompatActivity {
     LinearLayout LLStartTrading,LLPracticeTrading,LLOpenAccountStocks,LLValueAddedServices,LLCommissionsAndTaxes
             ,LLFaqs;
 
-    ImageView home;
+    ImageView home,backBtnStocks;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +32,7 @@ public class StocksActivity extends AppCompatActivity {
         LLValueAddedServices = findViewById(R.id.LLValueAddedServices);
         LLCommissionsAndTaxes = findViewById(R.id.LLCommissionsAndTaxes);
         LLFaqs = findViewById(R.id.LLFaqs);
+        backBtnStocks = findViewById(R.id.backBtnStocks);
 
         home = findViewById(R.id.home);
 
@@ -91,6 +92,14 @@ public class StocksActivity extends AppCompatActivity {
         });
 
         home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), AllSymbolsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        backBtnStocks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), AllSymbolsActivity.class);

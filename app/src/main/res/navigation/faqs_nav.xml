@@ -98,6 +98,22 @@
             android:id="@+id/action_custodyMattersFaqFragment_to_maintenanceFeeFragment2"
             app:destination="@id/maintenanceFeeFragment2"
             app:popUpTo="@id/custodyMattersFaqFragment" />
+        <action
+            android:id="@+id/action_custodyMattersFaqFragment_to_corporateActionFragment"
+            app:destination="@id/corporateActionFragment"
+            app:popUpTo="@id/custodyMattersFaqFragment" />
+        <action
+            android:id="@+id/action_custodyMattersFaqFragment_to_dividendCashDividendFragment"
+            app:destination="@id/dividendCashDividendFragment"
+            app:popUpTo="@id/custodyMattersFaqFragment" />
+        <action
+            android:id="@+id/action_custodyMattersFaqFragment_to_bonusSharesCustodyMattersFragment"
+            app:destination="@id/bonusSharesCustodyMattersFragment"
+            app:popUpTo="@id/custodyMattersFaqFragment" />
+        <action
+            android:id="@+id/action_custodyMattersFaqFragment_to_rightSharesFragment"
+            app:destination="@id/rightSharesFragment"
+            app:popUpTo="@id/custodyMattersFaqFragment" />
     </fragment>
     <fragment
         android:id="@+id/tradingApplicationFragment"
@@ -159,4 +175,24 @@
         android:name="com.example.bankalfalahumair.Fragments.CommissionsAndTaxes.MaintenanceFeeFragment"
         android:label="fragment_maintenance_fee"
         tools:layout="@layout/fragment_maintenance_fee" />
+    <fragment
+        android:id="@+id/corporateActionFragment"
+        android:name="com.example.bankalfalahumair.Fragments.FAQs.CustodyMatters.CorporateActionFragment"
+        android:label="fragment_corporate_action"
+        tools:layout="@layout/fragment_corporate_action" />
+    <fragment
+        android:id="@+id/dividendCashDividendFragment"
+        android:name="com.example.bankalfalahumair.Fragments.FAQs.CustodyMatters.DividendCashDividendFragment"
+        android:label="fragment_dividend_cash_dividend"
+        tools:layout="@layout/fragment_dividend_cash_dividend" />
+    <fragment
+        android:id="@+id/bonusSharesCustodyMattersFragment"
+        android:name="com.example.bankalfalahumair.Fragments.FAQs.CustodyMatters.BonusSharesCustodyMattersFragment"
+        android:label="fragment_bonus_shares_custody_matters"
+        tools:layout="@layout/fragment_bonus_shares_custody_matters" />
+    <fragment
+        android:id="@+id/rightSharesFragment"
+        android:name="com.example.bankalfalahumair.Fragments.FAQs.CustodyMatters.RightSharesFragment"
+        android:label="fragment_right_shares"
+        tools:layout="@layout/fragment_right_shares" />
 </navigation>

@@ -68,6 +68,10 @@
     <string name="CASH_deposit"><![CDATA[Mention the name and trading account number on deposit slip and email us scanned copy of deposit slip at csd@alfalahclsa.com from your registered email address. Once we receive the email, the funds are credited to the trading account as soon as they reflect in Alfalah CLSA Securities bank account.\n\n<font color="#1b3a60"><b>CASH deposit in excess of PKRs.25,000 is strictly prohibited.</b></font> \n\nAlfalah CLSA Securities maintains account with all the major commercial banks of Pakistan.  ]]></string>
     <string name="after_making">After making the IBFT transaction, email us the bank confirmation at <font color="#1b3a60"> <b>csd@alfalahclsa.com </b></font> from your registered email address and do mention your trading account number. Once we receive the email, the funds are credited to the trading account as soon as they reflect in Alfalah CLSA Securities bank account.</string>
     <string name="sindh_sales_tax">Sindh Sales Tax (“SST”) or Federal Excise Duty (“FED”) is charged by Government of Pakistan on trading of shares as well as on all Custodial services including CDC Sub account and NCCPL UIN maintenance fee\n<font color="#d0271b"><b> @ 13% </b></font></string>
+    <string name="for_filer_of_income_tax_returns_12_50">For filer of income tax returns:<font color="#d0271b"><b> 12.50%</b></font></string>
+    <string name="for_non_filer_of_income_tax_returns_17_50">For non-filer of income tax returns:<font color="#d0271b"><b> 17.50%</b></font></string>
+    <string name="rate_of_tax_reduction_5">Rate of Tax Reduction : <font color="#d0271b"><b>5%</b></font></string>
+    <string name="Option_1"> <font color = "#d0271b">Option-1</font>\nYou may sell Right Shares in the market and received 100% gain with making any further payment to company against subscription of Right Shares.\n\n<font color = "#d0271b">Option-2</font>\nYou may subscribe it by making payment to company against subscription of right shares.</string>
 
 
 </resources>

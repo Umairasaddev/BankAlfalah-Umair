@@ -88,7 +88,7 @@
                     android:layout_marginStart="@dimen/_10sdp"
                     android:text="Stocks"
 
-                    android:textColor="@color/black"
+                    android:textColor="@color/original_red"
 
                     android:textSize="@dimen/_15sdp" />
             </LinearLayout>
@@ -122,7 +122,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:text="Commodities"
-                    android:textColor="@color/black"
+                    android:textColor="@color/original_red"
                     android:textSize="@dimen/_15sdp" />
             </LinearLayout>
 
@@ -169,7 +169,7 @@
                     android:layout_height="wrap_content"
 
                     android:text="@string/bills_bonds"
-                    android:textColor="@color/black"
+                    android:textColor="@color/original_red"
                     android:textSize="@dimen/_15sdp" />
             </LinearLayout>
 

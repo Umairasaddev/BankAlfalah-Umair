@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.FAQs.CustodyMatters.DividendCashDividendFragment">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/plain_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@drawable/arrow_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Custody Matters"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17sdp" />
+
+
+    <RelativeLayout
+        android:id="@+id/RLDividendCashDividendCM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/border_white_tv"
+        android:elevation="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_12sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/_10sdp"
+            android:elevation="@dimen/_10sdp"
+            android:text="Dividend or Cash Dividend"
+            android:textColor="@color/white"
+
+                  android:textSize="@dimen/_14sdp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RLDividendCashDividendCM"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:lineSpacingMultiplier="1.1"
+        android:text="Cash dividend is issued either on quarterly, bi-annually or yearly basis. When a dividend is declared and issued, the equity of a company is affected because the distributable equity (retained earnings and/or paid-in capital) is reduced.\n\nFor each share owned, a certain amount of money is distributed to each shareholder. Thus, if an investor owns 100 shares and the cash dividend is 0.50 per share, the owner will receive 50 in total."
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_14sdp" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+
+        <TextView
+            android:id="@+id/b1"
+            style="@style/BulletTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:text="\u25BA;" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/b1"
+            android:text="@string/for_filer_of_income_tax_returns_12_50"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_14sdp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl1"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+
+        <TextView
+            android:id="@+id/b2"
+            style="@style/BulletTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:text="\u25BA;" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/b2"
+            android:text="@string/for_non_filer_of_income_tax_returns_17_50"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_14sdp"
+            />
+    </RelativeLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rl2"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:dividerColor="#FFC107"
+        />
+
+
+</RelativeLayout>

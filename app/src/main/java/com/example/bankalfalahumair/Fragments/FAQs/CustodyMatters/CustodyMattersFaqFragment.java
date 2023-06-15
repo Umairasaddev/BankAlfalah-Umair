@@ -33,11 +33,17 @@ public class CustodyMattersFaqFragment extends Fragment {
 
         NavController navController = Navigation.findNavController(view);
 
-        RelativeLayout RLCustodyCharges,RLAccountMaintenanceFee;
+        RelativeLayout RLCustodyCharges,RLAccountMaintenanceFee,RLCorporateAction
+                ,RLDividendCashDividendCustodyMatters,RLBonusSharesStockDividend
+                ,RLRightShares;
 
 
         RLCustodyCharges = view.findViewById(R.id.RLCustodyCharges);
         RLAccountMaintenanceFee = view.findViewById(R.id.RLAccountMaintenanceFee);
+        RLCorporateAction = view.findViewById(R.id.RLCorporateAction);
+        RLDividendCashDividendCustodyMatters = view.findViewById(R.id.RLDividendCashDividendCustodyMatters);
+        RLBonusSharesStockDividend = view.findViewById(R.id.RLBonusSharesStockDividend);
+        RLRightShares = view.findViewById(R.id.RLRightShares);
 
         RLCustodyCharges.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +56,34 @@ public class CustodyMattersFaqFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 navController.navigate(R.id.action_custodyMattersFaqFragment_to_maintenanceFeeFragment2);
+            }
+        });
+
+        RLCorporateAction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_custodyMattersFaqFragment_to_corporateActionFragment);
+            }
+        });
+
+        RLDividendCashDividendCustodyMatters.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_custodyMattersFaqFragment_to_dividendCashDividendFragment);
+            }
+        });
+
+        RLBonusSharesStockDividend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_custodyMattersFaqFragment_to_bonusSharesCustodyMattersFragment);
+            }
+        });
+
+        RLRightShares.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_custodyMattersFaqFragment_to_rightSharesFragment);
             }
         });
 
