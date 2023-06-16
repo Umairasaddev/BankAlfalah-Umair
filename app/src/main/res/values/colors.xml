@@ -4,7 +4,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="red">#bb2f29</color>
-    <color name="original_red">#e52d25</color>
+    <color name="original_red">#e01f22</color>
     <color name="mate_red">#d0271b</color>
     <color name="button_red">#ee2e24</color>
 
@@ -25,5 +25,7 @@
     <color name="greyish">#424242</color>
 
     <color name="hint_color">#A39E9E</color>
+
+    <color name="border_color">#e01f22</color>
 
 </resources>

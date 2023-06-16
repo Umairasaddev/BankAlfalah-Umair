@@ -71,7 +71,7 @@
     <string name="for_filer_of_income_tax_returns_12_50">For filer of income tax returns:<font color="#d0271b"><b> 12.50%</b></font></string>
     <string name="for_non_filer_of_income_tax_returns_17_50">For non-filer of income tax returns:<font color="#d0271b"><b> 17.50%</b></font></string>
     <string name="rate_of_tax_reduction_5">Rate of Tax Reduction : <font color="#d0271b"><b>5%</b></font></string>
-    <string name="Option_1"> <font color = "#d0271b">Option-1</font>\nYou may sell Right Shares in the market and received 100% gain with making any further payment to company against subscription of Right Shares.\n\n<font color = "#d0271b">Option-2</font>\nYou may subscribe it by making payment to company against subscription of right shares.</string>
+    <string name="Option_1"> <font color="#d0271b">Option-1</font>\nYou may sell Right Shares in the market and received 100% gain with making any further payment to company against subscription of Right Shares.\n\n<font color="#d0271b">Option-2</font>\nYou may subscribe it by making payment to company against subscription of right shares.</string>
 
 
 </resources>

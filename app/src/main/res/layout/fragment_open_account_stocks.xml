@@ -34,25 +34,27 @@
         android:id="@+id/linkvideo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/link_to_video_tutorial"
-        android:textSize="@dimen/_16sdp"
-        android:textColor="@color/blue"
-        android:textStyle="bold"
-        android:layout_below="@+id/DigitalAccountTV"
+
+        android:layout_below="@id/DigitalAccountTV"
         android:layout_alignParentEnd="true"
         android:layout_gravity="end"
         android:layout_marginEnd="@dimen/_10sdp"
-        />
+        android:text="@string/link_to_video_tutorial"
+
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
     <LinearLayout
+        android:id="@+id/ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/RLBottom"
-android:layout_marginTop="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_100sdp"
         android:background="@color/white"
-        android:layout_below="@+id/linkvideo"
-        android:weightSum="2"
-        android:orientation="vertical">
-
+       android:layout_below="@id/linkvideo"
+        android:orientation="vertical"
+        android:weightSum="2">
 
 
         <LinearLayout
@@ -60,8 +62,8 @@ android:layout_marginTop="@dimen/_100sdp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="@dimen/_10sdp"
-            android:orientation="horizontal"
             android:layout_weight="1"
+            android:orientation="horizontal"
             android:weightSum="2">
 
 
@@ -133,7 +135,7 @@ android:layout_marginTop="@dimen/_100sdp"
                     android:gravity="center"
                     android:text="How to Apply"
                     android:textColor="@color/original_red"
-                    android:textSize="@dimen/_14sdp"  />
+                    android:textSize="@dimen/_14sdp" />
             </LinearLayout>
 
 
@@ -144,8 +146,8 @@ android:layout_marginTop="@dimen/_100sdp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
 
-            android:orientation="horizontal"
             android:layout_weight="1"
+            android:orientation="horizontal"
             android:weightSum="3">
 
 
@@ -181,7 +183,7 @@ android:layout_marginTop="@dimen/_100sdp"
                     android:gravity="center"
                     android:text="Verify OTP"
                     android:textColor="@color/original_red"
-                    android:textSize="@dimen/_14sdp"  />
+                    android:textSize="@dimen/_14sdp" />
             </LinearLayout>
 
 
@@ -213,7 +215,7 @@ android:layout_marginTop="@dimen/_100sdp"
                     android:gravity="center"
                     android:text="Resume"
                     android:textColor="@color/original_red"
-                    android:textSize="@dimen/_14sdp"  />
+                    android:textSize="@dimen/_14sdp" />
             </LinearLayout>
 
             <LinearLayout
@@ -245,7 +247,7 @@ android:layout_marginTop="@dimen/_100sdp"
                     android:gravity="center"
                     android:text="Check Status"
                     android:textColor="@color/original_red"
-                    android:textSize="@dimen/_14sdp"  />
+                    android:textSize="@dimen/_14sdp" />
             </LinearLayout>
 
 
