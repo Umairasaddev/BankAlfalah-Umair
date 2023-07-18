@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeMenu"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/index_watch"
+            android:icon="@drawable/index"
+            android:title="Index Watch" />
+
+        <item
+            android:id="@+id/market_watch"
+            android:icon="@drawable/market"
+            android:title="Market Watch" />
+
+        <item
+            android:id="@+id/portfolio_watch"
+            android:icon="@drawable/portfolio"
+            android:title="Portfolio Watch" />
+
+        <item
+            android:id="@+id/shariah_watch"
+            android:icon="@drawable/symbol"
+
+            android:title="Shariah Watch" />
+
+    </group>
+</menu>

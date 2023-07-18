@@ -17,34 +17,35 @@
 
     <ImageView
         android:id="@+id/home"
-        android:layout_width="@dimen/_28sdp"
-        android:layout_height="@dimen/_28sdp"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
         android:src="@drawable/home" />
 
     <ImageView
         android:id="@+id/backBtnStocks"
-        android:layout_width="@dimen/_28sdp"
-        android:layout_height="@dimen/_28sdp"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/arrow_back"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginStart="@dimen/_5sdp"/>
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:src="@drawable/back" />
 
     <TextView
         android:id="@+id/stocksTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toEndOf="@+id/backBtnStocks"
         android:text="Stocks"
         android:textColor="@color/white"
-        android:textSize="@dimen/_20sdp"/>
+        android:textSize="@dimen/_20sdp" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,9 +55,7 @@
         android:layout_marginTop="@dimen/_20sdp"
         android:background="@color/white"
         android:orientation="vertical"
-        android:weightSum="3"
-
-        >
+        android:weightSum="4">
 
         <LinearLayout
             android:id="@+id/LinearLayout1"
@@ -65,7 +64,7 @@
             android:layout_marginTop="@dimen/_15sdp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="3">
+            android:weightSum="2">
 
 
             <LinearLayout
@@ -79,14 +78,14 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_18sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_35sdp"
-                        android:layout_height="@dimen/_35sdp"
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
                         android:src="@drawable/start_trading"
 
 
@@ -97,7 +96,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
                     android:gravity="center"
                     android:text="@string/start_trading"
                     android:textColor="@color/original_red"
@@ -116,14 +115,14 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:layout_marginEnd="@dimen/_15sdp"
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_18sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_35sdp"
-                        android:layout_height="@dimen/_35sdp"
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
                         android:src="@drawable/open_account" />
 
                 </LinearLayout>
@@ -131,44 +130,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
                     android:gravity="center"
                     android:text="@string/open_account"
                     android:textColor="@color/original_red"
                     android:textSize="@dimen/_14sdp" />
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/LLPracticeTrading"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_10sdp"
-                    android:background="@drawable/red_circle"
-                    android:gravity="center"
-                    android:padding="@dimen/_13sdp">
-
-                    <ImageView
-                        android:layout_width="@dimen/_35sdp"
-                        android:layout_height="@dimen/_35sdp"
-                        android:src="@drawable/practice_trading" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_10sdp"
-                    android:gravity="center"
-                    android:text="@string/practice_trading"
-                    android:textColor="@color/original_red"
-                    android:textSize="@dimen/_14sdp" />
-            </LinearLayout>
 
         </LinearLayout>
 
@@ -179,7 +147,7 @@
 
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="3">
+            android:weightSum="2">
 
 
             <LinearLayout
@@ -193,14 +161,14 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_18sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_35sdp"
-                        android:layout_height="@dimen/_35sdp"
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
                         android:src="@drawable/value_added_services"
 
 
@@ -211,7 +179,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
                     android:gravity="center"
                     android:text="@string/value_added_services"
                     android:textColor="@color/original_red"
@@ -230,14 +198,14 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:layout_marginEnd="@dimen/_15sdp"
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_18sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_35sdp"
-                        android:layout_height="@dimen/_35sdp"
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
                         android:src="@drawable/commission___taxes" />
 
                 </LinearLayout>
@@ -245,40 +213,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
                     android:gravity="center"
                     android:text="@string/comissions_amp_taxes"
-                    android:textColor="@color/original_red"
-                    android:textSize="@dimen/_14sdp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_10sdp"
-                    android:background="@drawable/red_circle"
-                    android:gravity="center"
-                    android:padding="@dimen/_13sdp">
-
-                    <ImageView
-                        android:layout_width="@dimen/_35sdp"
-                        android:layout_height="@dimen/_35sdp"
-                        android:src="@drawable/commission_calculator" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_10sdp"
-                    android:gravity="center"
-                    android:text="@string/comission_calculator"
                     android:textColor="@color/original_red"
                     android:textSize="@dimen/_14sdp" />
             </LinearLayout>
@@ -294,7 +231,7 @@
 
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="3">
+            android:weightSum="2">
 
             <LinearLayout
                 android:id="@+id/LLFaqs"
@@ -307,14 +244,14 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_18sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_35sdp"
-                        android:layout_height="@dimen/_35sdp"
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
                         android:src="@drawable/faqs"
 
 
@@ -325,7 +262,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
                     android:gravity="center"
                     android:text="@string/faqs"
                     android:textColor="@color/original_red"
@@ -343,14 +280,14 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:layout_marginEnd="@dimen/_15sdp"
                     android:background="@drawable/red_circle"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    android:padding="@dimen/_18sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_35sdp"
-                        android:layout_height="@dimen/_35sdp"
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
                         android:src="@drawable/investor_education" />
 
                 </LinearLayout>
@@ -358,6 +295,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
                     android:gravity="center"
                     android:text="@string/investor_education"
                     android:textColor="@color/original_red"
@@ -366,75 +304,173 @@
 
 
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:padding="@dimen/_18sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
+                        android:src="@drawable/commission_calculator" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:text="@string/comission_calculator"
+                    android:textColor="@color/original_red"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LLPracticeTrading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:padding="@dimen/_18sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
+                        android:src="@drawable/practice_trading" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:text="@string/practice_trading"
+                    android:textColor="@color/original_red"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
     </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/RLBottom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_65sdp"
         android:layout_alignParentBottom="true"
-
         android:background="@drawable/bottom_bar_red">
 
 
         <LinearLayout
-            android:id="@+id/homeLL"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:layout_marginEnd="@dimen/_20sdp"
-            android:layout_marginBottom="@dimen/_15sdp"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
 
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:background="@drawable/power_off"
-
-                />
-
-            <TextView
+            <LinearLayout
+                android:id="@+id/contactusLL"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Exit"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_14sdp" />
-        </LinearLayout>
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_20sdp">
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/contactusLL"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:layout_marginBottom="@dimen/_15sdp"
-            android:gravity="center"
-            android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:src="@drawable/contact_us" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="Contact Us"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+            </LinearLayout>
 
-            <ImageView
-
-                android:id="@+id/imageView2"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:background="@drawable/message" />
-
-            <TextView
+            <LinearLayout
+                android:id="@+id/symbolLL"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/contact_us"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_14sdp" />
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/_20sdp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
 
+                    <ImageView
+                        android:id="@+id/imageSymbol"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:src="@drawable/exit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:text="Exit"
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+
+            </LinearLayout>
         </LinearLayout>
-
     </RelativeLayout>
 
 

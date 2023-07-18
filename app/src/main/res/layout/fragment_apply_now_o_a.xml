@@ -240,7 +240,7 @@
                 <ImageView
                     android:layout_width="@dimen/_30sdp"
                     android:layout_height="@dimen/_30sdp"
-                    android:background="@color/grey"
+
                     android:src="@drawable/home"/>
 
             </LinearLayout>

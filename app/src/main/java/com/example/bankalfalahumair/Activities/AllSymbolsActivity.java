@@ -9,12 +9,15 @@ import android.widget.LinearLayout;
 
 import com.example.bankalfalahumair.BlankActivities.AboutAlfalahActivity;
 import com.example.bankalfalahumair.R;
+import com.example.bankalfalahumair.myMainActivity;
 
 public class AllSymbolsActivity extends AppCompatActivity {
 
 
     LinearLayout LLStockParent,LLComoditiesParent,LLBillsBondsParent,LLOpenAccountParent,LLResearchParent
             ,LLAboutUsParent;
+
+    LinearLayout portfolioLL;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +29,8 @@ public class AllSymbolsActivity extends AppCompatActivity {
         LLOpenAccountParent = findViewById(R.id.LLOpenAccountParent);
         LLResearchParent = findViewById(R.id.LLResearchParent);
         LLAboutUsParent = findViewById(R.id.LLAboutUsParent);
+
+        portfolioLL = findViewById(R.id.portfolioLL);
 
         onClickListners();
 
@@ -78,6 +83,11 @@ public class AllSymbolsActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), AboutAlfalahActivity.class);
                 startActivity(intent);
             }
+        });
+
+        portfolioLL.setOnClickListener(v->{
+            Intent intent = new Intent(getApplicationContext(), myMainActivity.class);
+            startActivity(intent);
         });
 
     }

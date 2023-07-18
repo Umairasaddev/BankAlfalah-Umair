@@ -12,7 +12,8 @@
         tools:layout="@layout/fragment_open_account_stocks" >
         <action
             android:id="@+id/action_openAccountStocksFragment_to_applyNowOAFragment"
-            app:destination="@id/applyNowOAFragment" />
+            app:destination="@id/applyNowOAFragment"
+            app:popUpTo="@id/openAccountStocksFragment" />
     </fragment>
     <fragment
         android:id="@+id/applyNowOAFragment"
@@ -21,7 +22,10 @@
         tools:layout="@layout/fragment_apply_now_o_a" >
         <action
             android:id="@+id/action_applyNowOAFragment_to_residenceFragment"
-            app:destination="@id/residenceFragment" />
+            app:destination="@id/residenceFragment"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/applyNowOAFragment" />
     </fragment>
     <fragment
         android:id="@+id/residenceFragment"

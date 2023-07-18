@@ -74,4 +74,9 @@
     <string name="Option_1"> <font color="#d0271b">Option-1</font>\nYou may sell Right Shares in the market and received 100% gain with making any further payment to company against subscription of Right Shares.\n\n<font color="#d0271b">Option-2</font>\nYou may subscribe it by making payment to company against subscription of right shares.</string>
 
 
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer CIF</string>
+    <string name="login"><u>Login</u></string>
+    <string name="create"><u>Create</u></string>
+
 </resources>
