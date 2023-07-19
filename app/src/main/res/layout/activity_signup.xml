@@ -55,7 +55,7 @@
                         android:id="@+id/iv1"
                         android:layout_width="@dimen/_15sdp"
                         android:layout_height="@dimen/_15sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_12sdp"
                         android:layout_marginEnd="@dimen/_8sdp"
                         android:layout_marginBottom="@dimen/_5sdp"
                         android:background="@drawable/user_name" />
@@ -92,7 +92,7 @@
                         android:id="@+id/iv3"
                         android:layout_width="@dimen/_15sdp"
                         android:layout_height="@dimen/_15sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_12sdp"
                         android:layout_marginEnd="@dimen/_8sdp"
                         android:layout_marginBottom="@dimen/_5sdp"
                         android:background="@drawable/phone" />
@@ -130,7 +130,7 @@
                         android:id="@+id/iv2"
                         android:layout_width="@dimen/_15sdp"
                         android:layout_height="@dimen/_15sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_12sdp"
                         android:layout_marginEnd="@dimen/_8sdp"
                         android:layout_marginBottom="@dimen/_5sdp"
                         android:background="@drawable/email" />
@@ -169,7 +169,7 @@
                         android:id="@+id/iv4"
                         android:layout_width="@dimen/_15sdp"
                         android:layout_height="@dimen/_15sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_12sdp"
                         android:layout_marginEnd="@dimen/_8sdp"
                         android:layout_marginBottom="@dimen/_5sdp"
                         android:background="@drawable/user_name" />
@@ -208,7 +208,7 @@
                         android:id="@+id/iv5"
                         android:layout_width="@dimen/_15sdp"
                         android:layout_height="@dimen/_15sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_12sdp"
                         android:layout_marginEnd="@dimen/_8sdp"
                         android:layout_marginBottom="@dimen/_5sdp"
                         android:background="@drawable/password" />

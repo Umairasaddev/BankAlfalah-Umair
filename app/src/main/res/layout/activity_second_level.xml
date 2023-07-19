@@ -54,7 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_50sdp"
                     android:layout_below="@id/secondlevelTV"
-                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginHorizontal="@dimen/_17sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:background="@drawable/border_grey_box">
 
@@ -89,7 +89,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_45sdp"
                     android:layout_below="@id/rlSecondLevelPassword"
-                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginHorizontal="@dimen/_17sdp"
                     android:layout_marginTop="@dimen/_20sdp"
                     android:background="@drawable/border_red_button">
 
@@ -166,7 +166,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_40sdp"
                     android:layout_below="@id/TVor"
-                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginHorizontal="@dimen/_17sdp"
                     android:background="@drawable/grey_box">
 
                     <TextView
@@ -190,6 +190,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
                 android:gravity="center"
                 android:text="Check your email and input the Second-Level Password to proceed"
                 android:textColor="@color/grey"

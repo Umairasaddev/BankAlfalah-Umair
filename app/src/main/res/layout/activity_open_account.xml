@@ -42,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/text"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:background="@color/white"
         android:orientation="vertical">
 
@@ -51,7 +51,7 @@
             android:id="@+id/LinearLayout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
+
             android:orientation="horizontal"
             android:weightSum="2">
 
@@ -64,33 +64,35 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:background="@drawable/red_circle"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/_16sdp"
+                    app:cardElevation="@dimen/_8sdp">
+
+                    >
+
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
-                        android:src="@drawable/stocks"
-
-
-                        />
-
-                </LinearLayout>
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/start_trading" />
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+
                     android:text="Stocks"
-
-                    android:textColor="@color/original_red"
-
-                    android:textSize="@dimen/_15sdp" />
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
             </LinearLayout>
 
 
@@ -102,28 +104,37 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_10sdp"
-                    android:background="@drawable/red_circle"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
                     android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    app:cardBackgroundColor="@color/white"
+
+                    app:cardCornerRadius="@dimen/_16sdp"
+                    app:cardElevation="@dimen/_8sdp">
+
+                    >
+
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center"
                         android:src="@drawable/commodities" />
-
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_10sdp"
+
+                    android:layout_marginEnd="@dimen/_15sdp"
                     android:text="Commodities"
-                    android:textColor="@color/original_red"
-                    android:textSize="@dimen/_15sdp" />
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                     />
             </LinearLayout>
 
 
@@ -133,9 +144,9 @@
             android:id="@+id/LinearLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_50sdp"
             android:orientation="horizontal"
-            android:weightSum="1">
+            android:layout_marginTop="@dimen/_10sdp"
+            android:weightSum="2">
 
 
             <LinearLayout
@@ -146,31 +157,36 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
 
-                    android:background="@drawable/red_circle"
-                    android:gravity="center"
-                    android:padding="@dimen/_13sdp">
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/_16sdp"
+                    app:cardElevation="@dimen/_8sdp">
+
+                    >
+
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
-                        android:src="@drawable/bills_and_bounds"
-
-
-                        />
-
-                </LinearLayout>
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/bills_and_bounds" />
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
 
                     android:text="@string/bills_bonds"
-                    android:textColor="@color/original_red"
-                    android:textSize="@dimen/_15sdp" />
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    />
             </LinearLayout>
 
 

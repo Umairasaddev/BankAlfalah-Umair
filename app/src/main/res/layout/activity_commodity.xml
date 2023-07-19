@@ -45,346 +45,402 @@
         android:textColor="@color/white"
         android:textSize="@dimen/_20sdp" />
 
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/RLBottom"
         android:layout_below="@id/toolbar"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:background="@color/white"
-        android:orientation="vertical"
-        android:weightSum="4">
+
+
+        >
 
         <LinearLayout
-            android:id="@+id/LinearLayout1"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="2">
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
 
 
             <LinearLayout
-                android:id="@+id/LLStartTradingCommodity"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:id="@+id/LLStartTradingCommodity"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:background="@drawable/red_circle"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:padding="@dimen/_18sdp">
-
-                    <ImageView
-                        android:layout_width="@dimen/_44sdp"
-                        android:layout_height="@dimen/_44sdp"
-                        android:src="@drawable/start_trading"
+                    android:orientation="vertical">
 
 
-                        />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_16sdp"
+                        app:cardElevation="@dimen/_8sdp">
 
+                        >
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/start_trading" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+
+                        android:text="Start Trading"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
                 </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
+
+                <LinearLayout
+                    android:id="@+id/LLOpenAccountCommodity"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/start_trading"
-                    android:textColor="@color/original_red"
-                    android:textSize="@dimen/_14sdp" />
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/white"
+
+                        app:cardCornerRadius="@dimen/_16sdp"
+                        app:cardElevation="@dimen/_8sdp">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/open_account" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:text="Open Account"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+
             </LinearLayout>
 
 
             <LinearLayout
-                android:id="@+id/LLOpenAccountCommodity"
-                android:layout_width="0dp"
+                android:id="@+id/LinearLayout2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:baselineAligned="false"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:id="@+id/LLValueAddedServicesCommodity"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:background="@drawable/red_circle"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:padding="@dimen/_18sdp">
+                    android:orientation="vertical">
 
-                    <ImageView
-                        android:layout_width="@dimen/_44sdp"
-                        android:layout_height="@dimen/_44sdp"
-                        android:src="@drawable/open_account" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_16sdp"
+                        app:cardElevation="@dimen/_8sdp">
 
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/value_added_services" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+
+                        android:gravity="center"
+                        android:text="Value Added \nServices"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
                 </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
+
+                <LinearLayout
+                    android:id="@+id/LLCommissionsAndTaxesCommodity"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/open_account"
-                    android:textColor="@color/original_red"
-                    android:textSize="@dimen/_14sdp" />
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/white"
+
+                        app:cardCornerRadius="@dimen/_16sdp"
+                        app:cardElevation="@dimen/_8sdp">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/commission___taxes" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:gravity="center"
+                        android:text="Commissions\n &amp; Taxes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LinearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/LLFaqsCommodity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_16sdp"
+                        app:cardElevation="@dimen/_8sdp">
+
+                        >
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/faqs" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+
+                        android:text="FAQ's"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/LLInvestorEducationCommodity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/white"
+
+                        app:cardCornerRadius="@dimen/_16sdp"
+                        app:cardElevation="@dimen/_8sdp">
+
+                        >
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/investor_education" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:gravity="center"
+                        android:text="Investor\n Education"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/LLCommissionCalculatorCommodity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_16sdp"
+                        app:cardElevation="@dimen/_8sdp">
+
+                        >
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/commission_calculator" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+
+                        android:gravity="center"
+                        android:text="Commission Calculator"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/LLPracticeTradingCommodity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/white"
+
+                        app:cardCornerRadius="@dimen/_16sdp"
+                        app:cardElevation="@dimen/_8sdp">
+
+                        >
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/practice_trading" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:gravity="center"
+                        android:text="Practice \nTrading"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+
             </LinearLayout>
 
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/LinearLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
 
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="2">
-
-
-            <LinearLayout
-                android:id="@+id/LLValueAddedServicesCommodity"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:background="@drawable/red_circle"
-                    android:gravity="center"
-                    android:padding="@dimen/_18sdp">
-
-                    <ImageView
-                        android:layout_width="@dimen/_44sdp"
-                        android:layout_height="@dimen/_44sdp"
-                        android:src="@drawable/value_added_services"
-
-
-                        />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:gravity="center"
-                    android:text="@string/value_added_services"
-                    android:textColor="@color/original_red"
-                    android:textSize="@dimen/_14sdp" />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:id="@+id/LLCommissionsAndTaxesCommodity"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:background="@drawable/red_circle"
-                    android:gravity="center"
-                    android:padding="@dimen/_18sdp">
-
-                    <ImageView
-                        android:layout_width="@dimen/_44sdp"
-                        android:layout_height="@dimen/_44sdp"
-                        android:src="@drawable/commission___taxes" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:gravity="center"
-                    android:text="@string/comissions_amp_taxes"
-                    android:textColor="@color/original_red"
-                    android:textSize="@dimen/_14sdp" />
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/LinearLayout3"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="2">
-
-            <LinearLayout
-                android:id="@+id/LLFaqsCommodity"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:background="@drawable/red_circle"
-                    android:gravity="center"
-                    android:padding="@dimen/_18sdp">
-
-                    <ImageView
-                        android:layout_width="@dimen/_44sdp"
-                        android:layout_height="@dimen/_44sdp"
-                        android:src="@drawable/faqs"
-
-
-                        />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:gravity="center"
-                    android:text="@string/faqs"
-                    android:textColor="@color/original_red"
-                    android:textSize="@dimen/_14sdp" />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:id="@+id/LLInvestorEducationCommodity"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:background="@drawable/red_circle"
-                    android:gravity="center"
-                    android:padding="@dimen/_18sdp">
-
-                    <ImageView
-                        android:layout_width="@dimen/_44sdp"
-                        android:layout_height="@dimen/_44sdp"
-                        android:src="@drawable/investor_education" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:gravity="center"
-                    android:text="@string/investor_education"
-                    android:textColor="@color/original_red"
-                    android:textSize="@dimen/_14sdp" />
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/LinearLayout4"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="2">
-
-            <LinearLayout
-                android:id="@+id/LLCommissionCalculatorCommodity"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:background="@drawable/red_circle"
-                    android:gravity="center"
-                    android:padding="@dimen/_18sdp">
-
-                    <ImageView
-                        android:layout_width="@dimen/_44sdp"
-                        android:layout_height="@dimen/_44sdp"
-                        android:src="@drawable/commission_calculator" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:gravity="center"
-                    android:text="@string/comission_calculator"
-                    android:textColor="@color/original_red"
-                    android:textSize="@dimen/_14sdp" />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:id="@+id/LLPracticeTradingCommodity"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:background="@drawable/red_circle"
-                    android:gravity="center"
-                    android:padding="@dimen/_18sdp">
-
-                    <ImageView
-                        android:layout_width="@dimen/_44sdp"
-                        android:layout_height="@dimen/_44sdp"
-                        android:src="@drawable/practice_trading" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:gravity="center"
-                    android:text="@string/practice_trading"
-                    android:textColor="@color/original_red"
-                    android:textSize="@dimen/_14sdp" />
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-
-    </LinearLayout>
+    </ScrollView>
 
     <RelativeLayout
         android:id="@+id/RLBottom"

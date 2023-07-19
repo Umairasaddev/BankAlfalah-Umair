@@ -22,11 +22,13 @@
         android:src="@drawable/logo" />
 
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/RLBottom"
-        android:layout_below="@id/logo"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/_80sdp"
         android:background="@color/white"
         android:orientation="vertical"
         android:weightSum="3">
@@ -52,13 +54,13 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="@dimen/_80sdp"
                     android:layout_height="@dimen/_80sdp"
-                    android:layout_margin="8dp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                   
+                    android:layout_marginBottom="@dimen/_8sdp"
                     android:gravity="center"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="@dimen/_16sdp"
                     app:cardElevation="@dimen/_8sdp">
-
-                    >
 
 
                     <ImageView
@@ -71,12 +73,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
-
+                    android:layout_marginStart="@dimen/_15sdp"
+               
                     android:text="Stocks"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_16sdp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_15sdp"
+                     />
             </LinearLayout>
 
             <LinearLayout
@@ -91,7 +93,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="@dimen/_80sdp"
                     android:layout_height="@dimen/_80sdp"
-                    android:layout_margin="8dp"
+                   
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
                     android:gravity="center"
                     app:cardBackgroundColor="@color/white"
 
@@ -111,14 +115,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
+                   
+                    android:layout_marginEnd="@dimen/_15sdp"
                     android:text="Commodities"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_16sdp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_15sdp"
+                     />
+
+
             </LinearLayout>
 
         </LinearLayout>
+
 
         <LinearLayout
             android:id="@+id/LinearLayout2"
@@ -142,7 +150,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="@dimen/_80sdp"
                     android:layout_height="@dimen/_80sdp"
-                    android:layout_margin="8dp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                   
+                    android:layout_marginBottom="@dimen/_8sdp"
                     android:gravity="center"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="@dimen/_16sdp"
@@ -161,11 +171,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                   
                     android:text="@string/bills_bonds"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_16sdp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_15sdp"
+                     />
             </LinearLayout>
 
             <LinearLayout
@@ -180,7 +191,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="@dimen/_80sdp"
                     android:layout_height="@dimen/_80sdp"
-                    android:layout_margin="8dp"
+                   
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
                     android:gravity="center"
                     app:cardBackgroundColor="@color/white"
 
@@ -200,11 +213,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
+                   
+                    android:layout_marginEnd="@dimen/_15sdp"
                     android:text="Research"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_16sdp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_15sdp"
+                     />
             </LinearLayout>
 
         </LinearLayout>
@@ -231,7 +245,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="@dimen/_80sdp"
                     android:layout_height="@dimen/_80sdp"
-                    android:layout_margin="8dp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                   
+                    android:layout_marginBottom="@dimen/_8sdp"
                     android:gravity="center"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="@dimen/_16sdp"
@@ -250,11 +266,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                   
                     android:text="Open Account"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_16sdp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_15sdp"
+                     />
             </LinearLayout>
 
             <LinearLayout
@@ -269,7 +286,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="@dimen/_80sdp"
                     android:layout_height="@dimen/_80sdp"
-                    android:layout_margin="8dp"
+                   
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
                     android:gravity="center"
                     app:cardBackgroundColor="@color/white"
 
@@ -289,11 +308,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
+                   
+                    android:layout_marginEnd="@dimen/_15sdp"
                     android:text="About Us"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_16sdp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_15sdp"
+                     />
             </LinearLayout>
 
         </LinearLayout>
