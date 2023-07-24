@@ -6,38 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".Activities.SecondLevelActivity">
 
-    <ScrollView
+
+
+    <LinearLayout
+        android:id="@+id/LLParent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="vertical"
         android:layout_above="@id/RLBottom"
-        android:background="@drawable/login_bg">
+        android:background="@drawable/login_bg"
+        android:paddingHorizontal="@dimen/_25sdp"
+        >
 
-        <LinearLayout
-            android:id="@+id/LLParent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-
-            android:paddingHorizontal="@dimen/_25sdp"
-            android:paddingTop="@dimen/_20sdp">
-
-
-            <ImageView
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="@dimen/_150sdp"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:src="@drawable/pointer" />
+        <ImageView
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_140sdp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:src="@drawable/pointer" />
 
             <RelativeLayout
                 android:id="@+id/RelativeParentLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/_250sdp"
                 android:background="@drawable/border_grey_box"
-                android:elevation="5dp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:paddingTop="@dimen/_20sdp"
-                android:paddingBottom="@dimen/_20sdp">
+                android:elevation="5dp">
 
                 <TextView
                     android:id="@+id/secondlevelTV"
@@ -164,7 +158,7 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40sdp"
+                    android:layout_height="@dimen/_38sdp"
                     android:layout_below="@id/TVor"
                     android:layout_marginHorizontal="@dimen/_17sdp"
                     android:background="@drawable/grey_box">
@@ -189,21 +183,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:gravity="center"
                 android:text="Check your email and input the Second-Level Password to proceed"
                 android:textColor="@color/grey"
                 android:lineSpacingMultiplier="1.1"
-                android:textSize="@dimen/_14sdp" />
+                android:textSize="@dimen/_12sdp" />
         </LinearLayout>
 
-    </ScrollView>
+
 
     <RelativeLayout
         android:id="@+id/RLBottom"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_60sdp"
+        android:layout_height="@dimen/_55sdp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/bottom_bar_red">
 
