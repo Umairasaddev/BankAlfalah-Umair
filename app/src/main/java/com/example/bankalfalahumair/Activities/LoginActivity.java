@@ -29,9 +29,6 @@ public class LoginActivity extends AppCompatActivity {
 
     RelativeLayout LoginBtn;
 
-
-
-
     private TextView fingerprintTV, forgotPasswordTV;
 
     TextView msgtex;
@@ -44,9 +41,6 @@ public class LoginActivity extends AppCompatActivity {
     // variable and assign a
     // value null to it
     private CancellationSignal cancellationSignal = null;
-
-
-
 
 
     // create an authenticationCallback
@@ -99,24 +93,25 @@ public class LoginActivity extends AppCompatActivity {
         // this will give us result of AUTHENTICATION
         final BiometricPrompt biometricPrompt = new BiometricPrompt(this, executor,
                 new BiometricPrompt.AuthenticationCallback() {
-            @Override
-            public void onAuthenticationError(int errorCode, @NonNull CharSequence errString) {
-                super.onAuthenticationError(errorCode, errString);
-            }
+                    @Override
+                    public void onAuthenticationError(int errorCode, @NonNull CharSequence errString) {
+                        super.onAuthenticationError(errorCode, errString);
+                    }
 
-            // THIS METHOD IS CALLED WHEN AUTHENTICATION IS SUCCESS
-            @Override
-            public void onAuthenticationSucceeded(@NonNull BiometricPrompt.AuthenticationResult result) {
-                super.onAuthenticationSucceeded(result);
-                Toast.makeText(getApplicationContext(), "Login Success", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(LoginActivity.this,SecondLevelActivity.class));
+                    // THIS METHOD IS CALLED WHEN AUTHENTICATION IS SUCCESS
+                    @Override
+                    public void onAuthenticationSucceeded(@NonNull BiometricPrompt.AuthenticationResult result) {
+                        super.onAuthenticationSucceeded(result);
+                        Toast.makeText(getApplicationContext(), "Login Success", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(LoginActivity.this, SecondLevelActivity.class));
 
-            }
-            @Override
-            public void onAuthenticationFailed() {
-                super.onAuthenticationFailed();
-            }
-        });
+                    }
+
+                    @Override
+                    public void onAuthenticationFailed() {
+                        super.onAuthenticationFailed();
+                    }
+                });
         // creating a variable for our promptInfo
         // BIOMETRIC DIALOG
 

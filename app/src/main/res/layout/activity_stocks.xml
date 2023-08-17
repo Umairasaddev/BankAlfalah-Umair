@@ -102,10 +102,9 @@
                         app:cardCornerRadius="@dimen/_16sdp"
                         app:cardElevation="@dimen/_8sdp">
 
-                        >
 
 
-                        <ImageView
+                    <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_50sdp"
                             android:layout_gravity="center"

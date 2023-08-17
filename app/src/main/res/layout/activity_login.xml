@@ -127,7 +127,7 @@
             <RelativeLayout
                 android:id="@+id/LoginBtn"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_35sdp"
+                android:layout_height="@dimen/_30sdp"
                 android:layout_below="@id/forgotPasswordTV"
                 android:layout_marginHorizontal="@dimen/_30sdp"
                 android:layout_marginTop="@dimen/_25sdp"
@@ -142,7 +142,6 @@
                     android:layout_marginTop="@dimen/_3sdp"
                     android:fontFamily="@font/roboto_medium"
                     android:text="LOGIN"
-
                     android:textColor="@color/white"
                     android:textSize="@dimen/_16sdp" />
 
@@ -183,7 +182,6 @@
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginBottom="@dimen/_10sdp"
             android:gravity="center"
-
             android:text="Tap fingerprint to Login with Biometric"
             android:textColor="@color/black"
             android:textSize="@dimen/_13sdp" />
@@ -220,7 +218,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:orientation="horizontal"
                 android:weightSum="2">
 

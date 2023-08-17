@@ -165,7 +165,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_50sdp"
                         android:layout_gravity="center"
-                        android:src="@drawable/bills_and_bounds" />
+                        android:src="@drawable/bills_and_bounds"
+                        />
                 </androidx.cardview.widget.CardView>
 
                 <TextView
@@ -324,6 +325,7 @@
         android:id="@+id/RLBottom"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_65sdp"
+        android:visibility="gone"
         android:layout_alignParentBottom="true"
         android:background="@drawable/bottom_bar_red">
 
